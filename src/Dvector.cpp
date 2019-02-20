@@ -12,7 +12,7 @@ Dvector::Dvector(unsigned int size, const double* data)
 {
 	this->dim = size;
 	this->data = new double[size];
-	if(this->data != nullptr){
+	if(data != nullptr){
 		for(unsigned int i = 0; i < size; i++){
 			this->data[i] = data[i];
 		}
@@ -141,7 +141,26 @@ Dvector &Dvector::operator-=(const Dvector &sourceVecteur){
     }
 }
 
+ostream &operator<<(ostream &out, const Dvector &vect){
+    out << "Dvector : ";
+    for(unsigned int i = 0; i< vect.size()-1; i++){
+        out << vect(i) <<", ";
+    }
+    out << vect(vect.size()-1) <<"." << "\n";
+    return out;
+}
 
+istream &operator>>(istream &in, const Dvector &vect){
+    cout << "coucou \n";
+    for(unsigned int i = 0; i< vect.size(); i++){
+        /*cout << i<<"\n";
+        double *number;
+        in >> *number;
+        memcpy(vect(0) +i*sizeof(double), number, sizeof(double));
+        */
+    }
+    return in;
+}
 
 Dvector operator+(const Dvector &v1, const double op){
     Dvector outputVect(v1);
