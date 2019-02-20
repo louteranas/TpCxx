@@ -11,30 +11,19 @@
 
 int main (void)
 {
-	//double tab[3];
-	//tab[0] = 1;
-	//tab[1] = 2;
-	//tab[2] = 3;
-	//Dvector vecteur(3, tab);
-	//vecteur.display(std::cout);
-	//std::cout<<vecteur.size()<<'\n';
-	//vecteur.fillRandomly();
-	//vecteur.display(std::cout);
-	//Dvector newVect = vecteur;
-	//newVect.display(std::cout);
-	//cout << vecteur(0) << '\n';
-	//vecteur(0) = 5;
-	//cout << vecteur(0) << '\n';
-    Dvector newVector(4);
+	double tab[3];
+	tab[0] = 1;
+	tab[1] = 2;
+	tab[2] = 3;
+	Dvector vecteur(3, tab);
+	vecteur.resize(3);
+	vecteur.display(cout);
 
-    cin >> newVector;
-    cout << newVector;
-    //cout << boolalpha;
-    //cout << (vecteur == newVector)<<'\n';
-    //newVector+=2;
-    //cout << (vecteur == newVector)<<'\n';
-    //(newVector + vecteur).display(cout);
+	vecteur.resize(2);
+	vecteur.display(cout);
 
+	vecteur.resize(4, 4.0);
+	vecteur.display(cout);
 }
 
 

@@ -24,6 +24,7 @@ class Dvector{
 		unsigned int size();
 		unsigned int size()const;
 		void fillRandomly();
+		void resize(unsigned int newSize, double init = 0);
 		double &operator()(unsigned int index);
 		double operator()(unsigned int index) const;
 		Dvector &operator=(const Dvector &sourceVecteur);
