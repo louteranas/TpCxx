@@ -6,6 +6,7 @@
  */
 
 #include "Dvector.h"
+#include "Height.h"
 #include <iostream>
 
 
@@ -25,10 +26,9 @@ int main (void)
 	//cout << vecteur(0) << '\n';
 	//vecteur(0) = 5;
 	//cout << vecteur(0) << '\n';
-    Dvector newVector(4);
-
-    cin >> newVector;
-    cout << newVector;
+    Dvector newVector(12);
+    Height h(4, 3, newVector);
+    //cout << h;
     //cout << boolalpha;
     //cout << (vecteur == newVector)<<'\n';
     //newVector+=2;
