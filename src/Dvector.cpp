@@ -247,6 +247,25 @@ void Dvector::display(ostream& str) const{
 
 }
 
+void Dvector::resize(unsigned int newSize, double init){
+    if(this->dim == newSize) {
+        return;
+    } else if(this->dim > newSize) {
+        this->dim = newSize;
+    } else {
+        double* newData = new double[newSize];
+        for(unsigned int i = 0; i < this->dim; i++){
+            newData[i] = this->data[i];
+        }
+        for(unsigned int i = this->dim; i < newSize; i++){
+            newData[i] = init;
+        }
+        this->data = newData;
+        this->dim = newSize;
+    }
+
+}
+
 
 unsigned int Dvector::size()
 {
