@@ -13,9 +13,27 @@ Height::Height(const Height &h) {
     this->dvect = h.dvect;
 }
 
-Height::Height(const Height &&h) {
-    /*swap();
-    swap();*/
+Height::Height(Height &&h) {
+    std::swap(this->lx, h.lx);
+    std::swap(this->ly, h.ly);
+    std::swap(this->dvect, h.dvect);
+
+  }
+Height& Height::operator=(Height &&sourceH){
+  std::swap(this->lx, sourceH.lx);
+  std::swap(this->ly, sourceH.ly);
+  std::swap(this->dvect, sourceH.dvect);
+  return *this;
+}
+
+unsigned int Height::getLx() {
+  return this->lx;
+}
+unsigned int Height::getLy() {
+  return this->ly;
+}
+Dvector Height::getDvect() {
+  return this->dvect;
 }
 
 Height::~Height() {

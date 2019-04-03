@@ -114,6 +114,12 @@ Dvector &Dvector::operator+=(const double op){
     return *this;
 }
 
+Dvector &Dvector::operator=(Dvector &&d){
+	swap(this->dim, d.dim);
+	swap(this->data, d.data);
+	return *this;
+}
+
 Dvector &Dvector::operator+=(const Dvector &sourceVecteur){
     if(sourceVecteur.dim != this->dim){
        cerr << "les vecteurs n'ont pas la meme taille \n";

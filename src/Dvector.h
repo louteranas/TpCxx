@@ -33,9 +33,9 @@ class Dvector{
 		Dvector &operator*=(const double op);
 		Dvector &operator/=(const double op);
 		Dvector &operator+=(const Dvector &sourceVecteur);
-        Dvector &operator-=(const Dvector &sourceVecteur);
-
-        bool operator==(const Dvector &v2);
+    Dvector &operator-=(const Dvector &sourceVecteur);
+    bool operator==(const Dvector &v2);
+		Dvector &operator=(Dvector &&d);
 
 	private:
 		/*Attributes*/
@@ -43,7 +43,6 @@ class Dvector{
 		double* data;
 
 };
-
 ostream &operator<<(ostream &out, const Dvector &vect);
 istream &operator>>(istream &in, const Dvector &vect);
 Dvector operator+(const Dvector &v1, const double op);
