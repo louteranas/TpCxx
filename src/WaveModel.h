@@ -17,8 +17,8 @@ class WaveModel{
 	    WaveModel(double dir, double align, double intensite, double longueurOnde, double ajust);
 	    ~WaveModel();
 	    WaveModel(const WaveModel &wave);
-      WaveModel &operator=(WaveModel &wave);
-	    WaveModel(const WaveModel &&wave);
+      WaveModel &operator=(const WaveModel &wave);
+	    WaveModel(WaveModel &&wave);
       WaveModel &operator=(WaveModel &&wave);
 			virtual double getDir();
 			virtual double getAlign();
