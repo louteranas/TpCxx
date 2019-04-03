@@ -17,7 +17,6 @@ Dvector::Dvector(unsigned int size, const double* data)
 			this->data[i] = data[i];
 		}
 	}
-
 }
 
 Dvector::Dvector(const Dvector &vector){
