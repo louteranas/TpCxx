@@ -15,20 +15,24 @@ using namespace std;
 
 class Height{
 	public :
-	    Height(unsigned int lx, unsigned int ly, const Dvector vect);
+	    Height(unsigned double lx, unsigned double ly, unsigned int nx, unsigned int ny, const Dvector vect);
 	    ~Height();
 	    Height(const Height &h);
       Height &operator=(const Height &sourceH);
 	    Height(Height &&h);
       Height &operator=(Height &&sourceH);
       double &operator()(unsigned int x, unsigned int y);
-      double operator()(unsigned int, unsigned int y) const;
-			unsigned int getLx();
-			unsigned int getLy();
+      double operator()(unsigned int x, unsigned int y) const;
+			unsigned double getLx();
+			unsigned double getLy();
+			unsigned int getNx();
+			unsigned int getNy();
 			Dvector getDvect();
 	private:
-	    unsigned int lx;
-	    unsigned int ly;
+			unsigned double lx;
+			unsigned double ly;
+			unsigned int nx;
+			unsigned int ny;
 			Dvector dvect;
 };
 
