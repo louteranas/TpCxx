@@ -18,8 +18,8 @@ class GerstnerWave
 	GerstnerWave(double amplitude, double phase, double direction, double frequence);
 	~GerstnerWave();
 	GerstnerWave(const GerstnerWave &wave);
-	GerstnerWave &operator=(GerstnerWave &wave);
-	GerstnerWave(const GerstnerWave &&wave);
+	GerstnerWave &operator=(const GerstnerWave &wave);
+	GerstnerWave(GerstnerWave &&wave);
 	GerstnerWave &operator=(GerstnerWave &&wave);
 	double getAmpl();
 	double getPhase();
