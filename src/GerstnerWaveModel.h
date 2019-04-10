@@ -8,8 +8,12 @@
 #include <ostream>
 #include <cstdlib>
 #include <ctime>
-
+#include <vector>
 #include <limits>
+#include "Dvector.h"
+#include "GerstnerWave.h"
+#include "Height.h"
+
 using namespace std;
 
 class GerstnerWaveModel
@@ -21,20 +25,20 @@ class GerstnerWaveModel
 		GerstnerWaveModel &operator=(const GerstnerWaveModel &waveModel);
 		GerstnerWaveModel(GerstnerWaveModel &&waveModel);
 		GerstnerWaveModel &operator=(GerstnerWaveModel &&waveModel);
-		Height operator()(double t);
+		//Height operator()(double t);
 		void add(GerstnerWave wave);
 		double getLx();
 		double getLy();
-		double getNx();
-		double getNy();
+		int getNx();
+		int getNy();
 		const vector <GerstnerWave> getWaves();
 
 	private:
 		double lx;
 		double ly;
-		double nx;
-		double ny;
-		const vector <GerstnerWave> waves;
+		int nx;
+		int ny;
+		vector <GerstnerWave> waves;
 };
 
 #endif

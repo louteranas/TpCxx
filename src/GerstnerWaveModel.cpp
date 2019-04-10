@@ -1,6 +1,6 @@
 #include "GerstnerWaveModel.h"
 
-GerstnerWaveModel::GerstnerWaveModel(double lx, double ly, int nx, int ny, const vector <GerstnerWaveModel> waves)
+GerstnerWaveModel::GerstnerWaveModel(double lx, double ly, int nx, int ny, const vector <GerstnerWave> waves)
 {
     this->lx = lx;
     this->ly = ly;
@@ -22,14 +22,14 @@ GerstnerWaveModel::GerstnerWaveModel(GerstnerWaveModel &&waveModel) {
   std::swap(this->ly, waveModel.ly);
   std::swap(this->nx, waveModel.nx);
   std::swap(this->ny, waveModel.ny);
-  std::swap(this->waves, wave.waves);
+  std::swap(this->waves, waveModel.waves);
   }
 GerstnerWaveModel& GerstnerWaveModel::operator=(GerstnerWaveModel &&waveModel){
   std::swap(this->lx, waveModel.lx);
   std::swap(this->ly, waveModel.ly);
   std::swap(this->nx, waveModel.nx);
   std::swap(this->ny, waveModel.ny);
-  std::swap(this->waves, wave.waves);
+  std::swap(this->waves, waveModel.waves);
   return *this;
 }
 
@@ -45,7 +45,7 @@ double GerstnerWaveModel::getLx() {
 double GerstnerWaveModel::getLy() {
   return this->ly;
 }
-vector <GerstnerWaveModel> GerstnerWaveModel::getWaves() {
+const vector <GerstnerWave> GerstnerWaveModel::getWaves() {
   return this->waves;
 }
 
@@ -53,14 +53,14 @@ void GerstnerWaveModel::add(GerstnerWave wave){
   (this->waves).push_back(wave);
 }
 
-Height GerstnerWaveModel::operator()(double t){
-  Height h(this->lx, this-> ly, this->nx, this->ny);
+/*Height GerstnerWaveModel::operator()(double t){
+  Height h(this->lx, this->ly, this->nx, this->ny);
   h.fill(0.0);
   for(const GerstnerWave& wave : this->waves){
     h+=wave(t);
   }
   return h;
-}
+}*/
 
 GerstnerWaveModel::~GerstnerWaveModel() {
 

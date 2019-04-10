@@ -8,8 +8,9 @@
 #include <ostream>
 #include <cstdlib>
 #include <ctime>
-
 #include <limits>
+#include "Height.h"
+
 using namespace std;
 
 class GerstnerWave
@@ -25,6 +26,7 @@ class GerstnerWave
 	double getPhase();
 	double getDir();
 	double getFreq();
+	//Height operator()(double t, Height &H, int Nx, int Ny, double Lx, double Ly) const;
 
 	private:
 		double amplitude;

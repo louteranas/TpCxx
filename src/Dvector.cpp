@@ -8,12 +8,12 @@ Dvector::Dvector()
 	this->data = nullptr;
 }
 
-Dvector::Dvector(unsigned int size, const double* data)
+Dvector::Dvector(int size, const double* data)
 {
 	this->dim = size;
 	this->data = new double[size];
 	if(data != nullptr){
-		for(unsigned int i = 0; i < size; i++){
+		for(int i = 0; i < size; i++){
 			this->data[i] = data[i];
 		}
 	}
@@ -26,7 +26,7 @@ Dvector::Dvector(const Dvector &vector){
         return;
     }
     this->data = new double[vector.dim];
-    for(unsigned int i =0; i < this->dim; i++){
+    for(int i =0; i < this->dim; i++){
         this->data[i] = vector.data[i];
     }
 }
@@ -64,11 +64,11 @@ Dvector::Dvector(string file){
     }
 }
 
-double &Dvector::operator()(unsigned int index){
+double &Dvector::operator()(int index){
     return this->data[index];
 }
 
-double Dvector::operator()(unsigned int index) const{
+double Dvector::operator()(int index) const{
     return this->data[index];
 }
 
@@ -80,14 +80,14 @@ Dvector &Dvector::operator=(const Dvector &sourceVecteur){
 }
 
 Dvector &Dvector::operator-=(const double op){
-    for(unsigned int i = 0; i< this->dim; i++){
+    for(int i = 0; i< this->dim; i++){
         this->data[i] = this->data[i] - op;
     }
     return *this;
 }
 
 Dvector &Dvector::operator*=(const double op){
-    for(unsigned int i = 0; i< this->dim; i++){
+    for(int i = 0; i< this->dim; i++){
         this->data[i] = this->data[i] * op;
     }
     return *this;
@@ -95,7 +95,7 @@ Dvector &Dvector::operator*=(const double op){
 
 Dvector &Dvector::operator/=(const double op){
     if(op!=0){
-        for(unsigned int i = 0; i< this->dim; i++){
+        for(int i = 0; i< this->dim; i++){
     this->data[i] = this->data[i]/ op;
         }
         return *this;
@@ -107,7 +107,7 @@ Dvector &Dvector::operator/=(const double op){
 }
 
 Dvector &Dvector::operator+=(const double op){
-    for(unsigned int i = 0; i< this->dim; i++){
+    for(int i = 0; i< this->dim; i++){
         this->data[i] = this->data[i] + op;
     }
     return *this;
@@ -125,7 +125,7 @@ Dvector &Dvector::operator+=(const Dvector &sourceVecteur){
        exit(1);
     }
     else{
-        for(unsigned int i = 0; i< this->dim; i++){
+        for(int i = 0; i< this->dim; i++){
             this->data[i] = this->data[i] + sourceVecteur.data[i];
         }
         return *this;
@@ -139,7 +139,7 @@ Dvector &Dvector::operator-=(const Dvector &sourceVecteur){
        exit(1);
     }
     else{
-        for(unsigned int i = 0; i< this->dim; i++){
+        for(int i = 0; i< this->dim; i++){
             this->data[i] = this->data[i] - sourceVecteur.data[i];
         }
         return *this;
@@ -148,7 +148,7 @@ Dvector &Dvector::operator-=(const Dvector &sourceVecteur){
 
 ostream &operator<<(ostream &out, const Dvector &vect){
     out << "Dvector : ";
-    for(unsigned int i = 0; i< vect.size()-1; i++){
+    for(int i = 0; i< vect.size()-1; i++){
         out << vect(i) <<", ";
     }
     out << vect(vect.size()-1) <<"." << "\n";
@@ -157,7 +157,7 @@ ostream &operator<<(ostream &out, const Dvector &vect){
 
 istream &operator>>(istream &in, const Dvector &vect){
     cout << "coucou \n";
-    for(unsigned int i = 0; i< vect.size(); i++){
+    for(int i = 0; i< vect.size(); i++){
         /*cout << i<<"\n";
         double *number;
         in >> *number;
@@ -182,7 +182,7 @@ Dvector operator-(const Dvector &v1, const double op){
 
 Dvector operator*(const Dvector &v1, const double op){
     Dvector outputVect(v1);
-    for(unsigned int i = 0; i< v1.size(); i++){
+    for(int i = 0; i< v1.size(); i++){
         outputVect(i) = v1(i) * op;
     }
     return outputVect;
@@ -191,7 +191,7 @@ Dvector operator*(const Dvector &v1, const double op){
 Dvector operator/(const Dvector &v1, const double op){
       if(op!=0){
           Dvector outputVect(v1);
-          for(unsigned int i = 0; i< v1.size(); i++){
+          for(int i = 0; i< v1.size(); i++){
               outputVect(i) = v1(i) / op;
           }
           return outputVect;
@@ -205,7 +205,7 @@ Dvector operator/(const Dvector &v1, const double op){
 
 Dvector operator+(const Dvector &v1, const Dvector &v2){
     Dvector outputVect(v1);
-    for(unsigned int i = 0; i< v1.size(); i++){
+    for(int i = 0; i< v1.size(); i++){
         outputVect(i) = v1(i) + v2(i);
     }
     return outputVect;
@@ -214,7 +214,7 @@ Dvector operator+(const Dvector &v1, const Dvector &v2){
 
 Dvector operator-(const Dvector &v1, const Dvector &v2){
      Dvector outputVect(v1.size());
-     for(unsigned int i = 0; i< v1.size(); i++){
+     for(int i = 0; i< v1.size(); i++){
          outputVect(i) = v1(i) - v2(i);
      }
      return outputVect;
@@ -223,7 +223,7 @@ Dvector operator-(const Dvector &v1, const Dvector &v2){
 
 Dvector operator-(const Dvector &v1){
     Dvector outputVect(v1.size());
-     for(unsigned int i = 0; i< v1.size(); i++){
+     for(int i = 0; i< v1.size(); i++){
          outputVect(i) = - v1(i);
      }
      return outputVect;
@@ -234,7 +234,7 @@ bool Dvector::operator==(const Dvector &v2){
     if(this->dim != v2.dim){
         return false;
     }
-    for(unsigned int i = 0; i< v2.dim; i++){
+    for(int i = 0; i< v2.dim; i++){
         if(this->data[i] != v2.data[i]){
             return false;
         }
@@ -246,23 +246,23 @@ bool Dvector::operator==(const Dvector &v2){
 
 void Dvector::display(ostream& str) const{
 	str << setprecision(6) << fixed;
-	for (unsigned int i = 0; i<this->dim; i++){
+	for (int i = 0; i<this->dim; i++){
 		str << this->data[i] << "\n";
 	}
 
 }
 
-void Dvector::resize(unsigned int newSize, double init){
+void Dvector::resize(int newSize, double init){
     if(this->dim == newSize) {
         return;
     } else if(this->dim > newSize) {
         this->dim = newSize;
     } else {
         double* newData = new double[newSize];
-        for(unsigned int i = 0; i < this->dim; i++){
+        for(int i = 0; i < this->dim; i++){
             newData[i] = this->data[i];
         }
-        for(unsigned int i = this->dim; i < newSize; i++){
+        for(int i = this->dim; i < newSize; i++){
             newData[i] = init;
         }
         this->data = newData;
@@ -272,19 +272,19 @@ void Dvector::resize(unsigned int newSize, double init){
 }
 
 
-unsigned int Dvector::size()
+int Dvector::size()
 {
     return this->dim;
 }
 
-unsigned int Dvector::size()const
+int Dvector::size()const
 {
     return this->dim;
 }
 
 void Dvector::fillRandomly(){
     srand(time(NULL));
-    for(unsigned int i = 0; i<this->dim; i++){
+    for(int i = 0; i<this->dim; i++){
         this->data[i] = (double)rand()/(double) RAND_MAX;
     }
 }

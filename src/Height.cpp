@@ -1,6 +1,6 @@
 #include "Height.h"
 
-Height::Height(unsigned double lx, unsigned double ly, unsigned int nx, unsigned int ny, const Dvector dvect)
+Height::Height(double lx, double ly, int nx, int ny, const Dvector dvect)
 {
     this->lx = lx;
     this->ly = ly;
@@ -8,6 +8,15 @@ Height::Height(unsigned double lx, unsigned double ly, unsigned int nx, unsigned
     this->ny = ny;
     this->dvect = dvect;
 }
+Height::Height(double lx, double ly, int nx, int ny)
+{
+    this->lx = lx;
+    this->ly = ly;
+    this->nx = nx;
+    this->ny = ny;
+    this->dvect = Dvector((nx + 1) * (ny + 1), nullptr);
+}
+
 
 Height::Height(const Height &h) {
     this->lx = h.lx;
@@ -23,8 +32,8 @@ Height::Height(Height &&h) {
     std::swap(this->nx, h.nx);
     std::swap(this->ny, h.ny);
     std::swap(this->dvect, h.dvect);
+}
 
-  }( double t
 Height& Height::operator=(Height &&sourceH){
   std::swap(this->lx, sourceH.lx);
   std::swap(this->ly, sourceH.ly);
@@ -34,22 +43,21 @@ Height& Height::operator=(Height &&sourceH){
   return *this;
 }
 
-unsigned double Height::getLx() {
+ double Height::getLx() {
   return this->lx;
 }
-unsigned double Height::getLy() {
+ double Height::getLy() {
   return this->ly;
 }
-unsigned int Height::getNx() {
+ int Height::getNx() {
   return this->nx;
 }
-unsigned int Height::getNy() {
+ int Height::getNy() {
   return this->ny;
 }
 Dvector Height::getDvect() {
   return this->dvect;
 }
-
 Height::~Height() {
 
 }
@@ -63,10 +71,22 @@ Height &Height::operator=(const Height &sourceH) {
     return *this;
 }
 
-double &Height::operator()(unsigned int x, unsigned int y){
+Height &Height::operator+=(Height h) {
+    for(int i = 0; i < this->dvect.size(); i++) {
+      (this->dvect)(i) += (h.getDvect())(i);
+    }
+    return *this;
+}
+double &Height::operator()( int x,  int y){
     return this->dvect(x * this->nx + y);
 }
 
-double Height::operator()(unsigned int x, unsigned int y) const{
+double Height::operator()( int x,  int y) const{
     return this->dvect(x * this->nx + y);
+}
+void Height::fill(double nb) {
+  int size = this->dvect.size();
+  for(int i =0; i < size; i++){
+    (this->dvect)(i) = nb;
+  }
 }

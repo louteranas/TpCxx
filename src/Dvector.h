@@ -16,17 +16,17 @@ using namespace std;
 class Dvector{
 	public :
 		Dvector();
-		Dvector(unsigned int size, const double* data = nullptr);
+		Dvector(int size, const double* data = nullptr);
 		Dvector(const Dvector &vector);
 		Dvector(string file);
 		~Dvector();
 		void display(ostream& str)const;
-		unsigned int size();
-		unsigned int size()const;
+		int size();
+		int size()const;
 		void fillRandomly();
-		void resize(unsigned int newSize, double init = 0);
-		double &operator()(unsigned int index);
-		double operator()(unsigned int index) const;
+		void resize(int newSize, double init = 0);
+		double &operator()(int index);
+		double operator()(int index) const;
 		Dvector &operator=(const Dvector &sourceVecteur);
 		Dvector &operator+=(const double op);
 		Dvector &operator-=(const double op);
@@ -39,7 +39,7 @@ class Dvector{
 
 	private:
 		/*Attributes*/
-		unsigned int dim;
+		int dim;
 		double* data;
 
 };

@@ -9,30 +9,34 @@
 #include <cstdlib>
 #include <ctime>
 #include "Dvector.h"
+#include "GerstnerWave.h"
 
 #include <limits>
 using namespace std;
 
 class Height{
 	public :
-	    Height(unsigned double lx, unsigned double ly, unsigned int nx, unsigned int ny, const Dvector vect);
+			Height(double lx, double ly, int nx, int ny, const Dvector vect);
+			Height(double lx, double ly, int nx, int ny);
 	    ~Height();
 	    Height(const Height &h);
-      Height &operator=(const Height &sourceH);
+			Height &operator=(const Height &sourceH);
+			Height &operator+=(const Height h);
 	    Height(Height &&h);
       Height &operator=(Height &&sourceH);
-      double &operator()(unsigned int x, unsigned int y);
-      double operator()(unsigned int x, unsigned int y) const;
-			unsigned double getLx();
-			unsigned double getLy();
-			unsigned int getNx();
-			unsigned int getNy();
+      double &operator()(int x, int y);
+      double operator()(int x, int y) const;
+			void fill(double nb);
+			double getLx();
+			double getLy();
+			int getNx();
+			int getNy();
 			Dvector getDvect();
 	private:
-			unsigned double lx;
-			unsigned double ly;
-			unsigned int nx;
-			unsigned int ny;
+			double lx;
+			double ly;
+			int nx;
+			int ny;
 			Dvector dvect;
 };
 
