@@ -41,4 +41,5 @@ class PhilipsWaveModel
 		vector <PhilipsWave> waves;
 };
 
+
 #endif
