@@ -1,6 +1,7 @@
 #ifndef GERSTNERWAVE_H
 #define GERSTNERWAVE_H
 
+#define _USE_MATH_DEFINES
 #include <iomanip>
 #include <fstream>
 #include <iostream>
@@ -9,7 +10,9 @@
 #include <cstdlib>
 #include <ctime>
 #include <limits>
+#include <math.h>
 #include "Height.h"
+#include "Dvector.h"
 
 using namespace std;
 
@@ -26,7 +29,7 @@ class GerstnerWave
 	double getPhase();
 	double getDir();
 	double getFreq();
-	//Height operator()(double t, Height &H, int Nx, int Ny, double Lx, double Ly) const;
+	Height operator()(double &t, Height &H, int &Nx, int &Ny, double &Lx, double &Ly);
 
 	private:
 		double amplitude;

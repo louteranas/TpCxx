@@ -54,7 +54,7 @@ GerstnerWave &GerstnerWave::operator=(const GerstnerWave &wave) {
   return *this;
 }
 
-/*Height GerstnerWave::operator()(double t, Height &H, int Nx, int Ny, double Lx, double Ly) const {
+Height GerstnerWave::operator()(double &t, Height &H, int &Nx, int &Ny, double &Lx, double &Ly) {
   double dx = (double)Lx / Nx;
   double dy = (double)Ly / Ny;
   H.fill(0.0);
@@ -62,14 +62,18 @@ GerstnerWave &GerstnerWave::operator=(const GerstnerWave &wave) {
     for (int j=0; j<Nx; j++){
       // Calcul deXetZavec les equations (13) et (14)
       // Ici onsuppose que K = (Ky,Kx)  et  k = | |K| |
-      double Z, X[2];
+      double Z, X[2], K[2];
+      K[0] = 1;
+      K[1] = 1;
+      double norme = sqrt(pow(K[0], 2) + pow(K[1], 2));
 
       const double Xo[2]={i*dy, j*dx};
       const double kdotx0=K[0]*Xo[0]+K[1]*Xo[1];
-      const double theta=kdotx0-omega*t+phi
-      for (int k=0; k<2;k++)
-      X[i]=Xo[i]-K[i]/k*A*sin(theta);
-      Z=A*cos(theta);
+      const double theta=kdotx0-(this->frequence)*t+(this->phase);
+      for (int k=0; k<2;k++) {
+        X[k]=Xo[k]-K[k]/norme*(this->amplitude)*sin(theta);
+      }
+      Z=(this->amplitude)*cos(theta);
 
       // Calculdunouveau couple (I,J) correspondant a X
       //  ( cela  correspond  au  point  de  la  g r i l l e  l e  plus  proche)
@@ -82,4 +86,5 @@ GerstnerWave &GerstnerWave::operator=(const GerstnerWave &wave) {
       H(I,J)+=Z;
     }
   }
-}*/
+  return H;
+}

@@ -53,14 +53,14 @@ void GerstnerWaveModel::add(GerstnerWave wave){
   (this->waves).push_back(wave);
 }
 
-/*Height GerstnerWaveModel::operator()(double t){
+Height GerstnerWaveModel::operator()(double t){
   Height h(this->lx, this->ly, this->nx, this->ny);
   h.fill(0.0);
-  for(const GerstnerWave& wave : this->waves){
-    h+=wave(t);
+  for(GerstnerWave& wave : this->waves){
+    h+=wave(t, h, this->nx, this->ny, this->lx, this->ly);
   }
   return h;
-}*/
+}
 
 GerstnerWaveModel::~GerstnerWaveModel() {
 

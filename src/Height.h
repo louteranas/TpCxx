@@ -9,7 +9,6 @@
 #include <cstdlib>
 #include <ctime>
 #include "Dvector.h"
-#include "GerstnerWave.h"
 
 #include <limits>
 using namespace std;

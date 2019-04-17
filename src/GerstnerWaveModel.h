@@ -25,7 +25,7 @@ class GerstnerWaveModel
 		GerstnerWaveModel &operator=(const GerstnerWaveModel &waveModel);
 		GerstnerWaveModel(GerstnerWaveModel &&waveModel);
 		GerstnerWaveModel &operator=(GerstnerWaveModel &&waveModel);
-		//Height operator()(double t);
+		Height operator()(double t);
 		void add(GerstnerWave wave);
 		double getLx();
 		double getLy();
