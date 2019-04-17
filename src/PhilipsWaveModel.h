@@ -25,7 +25,6 @@ class PhilipsWaveModel
 		PhilipsWaveModel &operator=(const PhilipsWaveModel &waveModel);
 		PhilipsWaveModel(PhilipsWaveModel &&waveModel);
 		PhilipsWaveModel &operator=(PhilipsWaveModel &&waveModel);
-		Height operator()(double t);
 		void add(PhilipsWave wave);
 		double getLx();
 		double getLy();

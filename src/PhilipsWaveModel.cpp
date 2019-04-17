@@ -53,14 +53,6 @@ void PhilipsWaveModel::add(PhilipsWave wave){
   (this->waves).push_back(wave);
 }
 
-Height PhilipsWaveModel::operator()(double t){
-  Height h(this->lx, this->ly, this->nx, this->ny);
-  h.fill(0.0);
-  for(PhilipsWave& wave : this->waves){
-    h+=wave(t, h, this->nx, this->ny, this->lx, this->ly);
-  }
-  return h;
-}
 
 PhilipsWaveModel::~PhilipsWaveModel() {
 
