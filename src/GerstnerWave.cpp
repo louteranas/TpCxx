@@ -58,7 +58,7 @@ Height GerstnerWave::operator()(double &t, Height &H, int &Nx, int &Ny, double &
   double dx = (double)Lx / Nx;
   double dy = (double)Ly / Ny;
   H.fill(0.0);
-   for (int i=0; i<Ny; i++){
+  for (int i=0; i<Ny; i++){
     for (int j=0; j<Nx; j++){
       // Calcul deXetZavec les equations (13) et (14)
       // Ici onsuppose que K = (Ky,Kx)  et  k = | |K| |

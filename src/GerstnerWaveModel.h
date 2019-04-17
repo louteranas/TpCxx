@@ -10,9 +10,7 @@
 #include <ctime>
 #include <vector>
 #include <limits>
-#include "Dvector.h"
 #include "GerstnerWave.h"
-#include "Height.h"
 
 using namespace std;
 
