@@ -6,17 +6,17 @@ Dvector::Dvector()
 {
 	this->dim = 0;
 	this->data = nullptr;
+    //cout << "Constructeur par défaut appelé ! \n";
 }
 
-Dvector::Dvector(int size, const double* data)
+Dvector::Dvector(int size, const double ini)
 {
-	this->dim = size;
-	this->data = new double[size];
-	if(data != nullptr){
-		for(int i = 0; i < size; i++){
-			this->data[i] = data[i];
-		}
-	}
+    this->dim = size;
+    this->data = new double[size];
+    for(int i = 0; i < size; i++){
+        this->data[i] = ini;
+    }
+    //cout << "Constructeur avec initialisation appelé ! \n";
 }
 
 Dvector::Dvector(const Dvector &vector){
@@ -29,6 +29,7 @@ Dvector::Dvector(const Dvector &vector){
     for(int i =0; i < this->dim; i++){
         this->data[i] = vector.data[i];
     }
+    //cout << "Constructeur par copie appelé ! \n";
 }
 
 Dvector::~Dvector(){
@@ -36,7 +37,7 @@ Dvector::~Dvector(){
 		delete[] this->data;
 	}
 	this->data = nullptr;
-
+    //cout << "Destructeur appelé ! \n";
 }
 
 Dvector::Dvector(string file){
@@ -50,7 +51,10 @@ Dvector::Dvector(string file){
         int taille = 0;
         while(fichier.ignore(numeric_limits<int>::max(), '\n'))
             taille++;
+        fichier.clear();
+        fichier.seekg(0, ios::beg);
         this->dim = taille;
+        //cout << taille << "\n";
         this->data = new double[taille];
         string ligneData;
         int ligne = 0;
@@ -62,6 +66,7 @@ Dvector::Dvector(string file){
         }
         fichier.close();
     }
+    //cout << "Constructeur par fichier appelé ! \n";
 }
 
 double &Dvector::operator()(int index){
@@ -182,18 +187,20 @@ Dvector operator-(const Dvector &v1, const double op){
 
 Dvector operator*(const Dvector &v1, const double op){
     Dvector outputVect(v1);
-    for(int i = 0; i< v1.size(); i++){
+    /*for(int i = 0; i< v1.size(); i++){
         outputVect(i) = v1(i) * op;
-    }
+    }*/
+    outputVect *= op;
     return outputVect;
 }
 
 Dvector operator/(const Dvector &v1, const double op){
       if(op!=0){
           Dvector outputVect(v1);
-          for(int i = 0; i< v1.size(); i++){
+          /*for(int i = 0; i< v1.size(); i++){
               outputVect(i) = v1(i) / op;
-          }
+          }*/
+          outputVect /= op;
           return outputVect;
       }
       else{
@@ -245,7 +252,7 @@ bool Dvector::operator==(const Dvector &v2){
 
 
 void Dvector::display(ostream& str) const{
-	str << setprecision(6) << fixed;
+	str << setprecision(3);
 	for (int i = 0; i<this->dim; i++){
 		str << this->data[i] << "\n";
 	}

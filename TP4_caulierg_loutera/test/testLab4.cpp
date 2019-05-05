@@ -6,14 +6,11 @@
  */
 
 #include "Dvector.h"
+#include <assert.h>
 #include <iostream>
 
 
 int main (void)
 {
-
+	cout << "OK\n";
 }
-
-
-
-

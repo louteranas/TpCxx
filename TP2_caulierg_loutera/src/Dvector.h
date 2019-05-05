@@ -8,6 +8,7 @@
 #include <ostream>
 #include <cstdlib>
 #include <ctime>
+#include <assert.h>
 
 
 #include <limits>
@@ -16,7 +17,7 @@ using namespace std;
 class Dvector{
 	public :
 		Dvector();
-		Dvector(int size, const double* data = nullptr);
+		Dvector(int size, const double ini = 0);
 		Dvector(const Dvector &vector);
 		Dvector(string file);
 		~Dvector();
@@ -33,8 +34,8 @@ class Dvector{
 		Dvector &operator*=(const double op);
 		Dvector &operator/=(const double op);
 		Dvector &operator+=(const Dvector &sourceVecteur);
-    Dvector &operator-=(const Dvector &sourceVecteur);
-    bool operator==(const Dvector &v2);
+	    Dvector &operator-=(const Dvector &sourceVecteur);
+	    bool operator==(const Dvector &v2);
 		Dvector &operator=(Dvector &&d);
 
 	private:
