@@ -18,22 +18,29 @@ using namespace std;
 class PhilipsWave
 {
 	public :
-	PhilipsWave(double amplitude, double phase, double direction, double frequence);
+	PhilipsWave(double amplitude, double windDir, double windSpeed, int Lx, int Ly, int Nx, int Ny);
 	~PhilipsWave();
 	PhilipsWave(const PhilipsWave &wave);
 	PhilipsWave &operator=(const PhilipsWave &wave);
 	PhilipsWave(PhilipsWave &&wave);
 	PhilipsWave &operator=(PhilipsWave &&wave);
 	double getAmpl();
-	double getPhase();
-	double getDir();
-	double getFreq();
+	double getWindDir();
+	double getWindSpeed();
+	int getLy();
+	int getLx();
+	int getNx();
+	int getNy();
+
 
 	private:
 		double amplitude;
-		double phase;
-		double direction;
-		double frequence;
+		double windDir;
+		double windSpeed;
+		int Lx;
+		int Ly;
+		int Nx;
+		int Ny;
 };
 
 #endif
