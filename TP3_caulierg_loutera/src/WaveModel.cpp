@@ -1,20 +1,15 @@
 #include "WaveModel.h"
 
-WaveModel::WaveModel(double dir, double align, double intensite, double longueurOnde, double ajust)
+WaveModel::WaveModel(double* direction, double alignement, double intens, double longueur, double ajuste)
+: dir(direction), align(alignement), intensite(intens), longueurOnde(longueur), ajust(ajuste)
 {
-    this->dir = dir;
-    this->align = align;
-    this->intensite = intensite;
-    this->longueurOnde = longueurOnde;
-    this->ajust = ajust;
+
 }
 
-WaveModel::WaveModel(const WaveModel &wave) {
-  this->dir = wave.dir;
-  this->align = wave.align;
-  this->intensite = wave.intensite;
-  this->longueurOnde = wave.longueurOnde;
-  this->ajust = wave.ajust;
+WaveModel::WaveModel(const WaveModel &wave)
+: dir(wave.dir), align(wave.align), intensite(wave.intensite), longueurOnde(wave.longueurOnde), ajust(wave.ajust)
+{
+
 }
 
 WaveModel::WaveModel(WaveModel &&wave) {
@@ -24,16 +19,8 @@ WaveModel::WaveModel(WaveModel &&wave) {
   std::swap(this->longueurOnde, wave.longueurOnde);
   std::swap(this->ajust, wave.ajust);
   }
-WaveModel& WaveModel::operator=(WaveModel &&wave){
-  std::swap(this->dir, wave.dir);
-  std::swap(this->align, wave.align);
-  std::swap(this->intensite, wave.intensite);
-  std::swap(this->longueurOnde, wave.longueurOnde);
-  std::swap(this->ajust, wave.ajust);
-  return *this;
-}
 
-double WaveModel::getDir() {
+double* WaveModel::getDir() {
   return this->dir;
 }
 double WaveModel::getIntens() {
@@ -50,14 +37,9 @@ double WaveModel::getAjust() {
 }
 
 WaveModel::~WaveModel() {
+  if(this->dir != nullptr){
+    delete[] this->dir;
+  }
+  this->dir = nullptr;
 
-}
-
-WaveModel &WaveModel::operator=(const WaveModel &wave) {
-  this->dir = wave.dir;
-  this->align = wave.align;
-  this->intensite = wave.intensite;
-  this->longueurOnde = wave.longueurOnde;
-  this->ajust = wave.ajust;
-  return *this;
 }

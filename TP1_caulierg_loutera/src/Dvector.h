@@ -8,6 +8,7 @@
 #include <ostream>
 #include <cstdlib>
 #include <ctime>
+#include <assert.h>
 
 
 #include <limits>
@@ -34,7 +35,7 @@ class Dvector{
 		Dvector &operator/=(const double op);
 		Dvector &operator+=(const Dvector &sourceVecteur);
 	    Dvector &operator-=(const Dvector &sourceVecteur);
-	    bool operator==(const Dvector &v2);
+	    bool operator==(const Dvector &v2) const;
 		Dvector &operator=(Dvector &&d);
 
 	private:

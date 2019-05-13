@@ -1,6 +1,6 @@
 #include "GerstnerWave.h"
 
-GerstnerWave::GerstnerWave(double amplitude, double phase, double direction, double frequence)
+GerstnerWave::GerstnerWave(double amplitude, double phase, double* direction, double frequence)
 {
     this->amplitude = amplitude;
     this->phase = phase;
@@ -32,7 +32,7 @@ GerstnerWave& GerstnerWave::operator=(GerstnerWave &&wave){
 double GerstnerWave::getAmpl() {
   return this->amplitude;
 }
-double GerstnerWave::getDir() {
+double* GerstnerWave::getDir() {
   return this->direction;
 }
 double GerstnerWave::getPhase() {
@@ -43,6 +43,10 @@ double GerstnerWave::getFreq() {
 }
 
 GerstnerWave::~GerstnerWave() {
+  if(this->direction != nullptr){
+    delete[] this->direction;
+  }
+  this->direction = nullptr;
 
 }
 
@@ -62,17 +66,16 @@ Height GerstnerWave::operator()(double &t, Height &H, int &Nx, int &Ny, double &
     for (int j=0; j<Nx; j++){
       // Calcul deXetZavec les equations (13) et (14)
       // Ici onsuppose que K = (Ky,Kx)  et  k = | |K| |
-      double Z, X[2], K[2];
-      K[0] = 1;
-      K[1] = 1;
-      double norme = sqrt(pow(K[0], 2) + pow(K[1], 2));
+      double Z, X[2];
+      double norme = sqrt(pow(this->direction[0], 2) + pow(this->direction[1], 2));
 
       const double Xo[2]={i*dy, j*dx};
-      const double kdotx0=K[0]*Xo[0]+K[1]*Xo[1];
+      const double kdotx0=this->direction[0]*Xo[0]+this->direction[1]*Xo[1];
       const double theta=kdotx0-(this->frequence)*t+(this->phase);
-      for (int k=0; k<2;k++) {
-        X[k]=Xo[k]-K[k]/norme*(this->amplitude)*sin(theta);
-      }
+
+      X[0]=Xo[0]-(this->direction[0]/norme)*(this->amplitude)*sin(theta);
+      X[1]=Xo[1]-(this->direction[1]/norme)*(this->amplitude)*sin(theta);
+
       Z=(this->amplitude)*cos(theta);
 
       // Calculdunouveau couple (I,J) correspondant a X
