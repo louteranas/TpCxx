@@ -1,6 +1,6 @@
 #include "GerstnerWaveModel.h"
 
-GerstnerWaveModel::GerstnerWaveModel(double* dir, double align, double intensite, double longueurOnde, double ajust, double lx, double ly, int nx, int ny, const vector <GerstnerWave> waves)
+GerstnerWaveModel::GerstnerWaveModel(Dvector dir, double align, double intensite, double longueurOnde, double ajust, double lx, double ly, int nx, int ny, const vector <GerstnerWave> waves)
 : WaveModel(dir, align, intensite, longueurOnde, ajust), lx(lx), ly(ly), nx(nx), ny(ny), waves(waves)
 {
 
@@ -28,7 +28,7 @@ const vector <GerstnerWave> GerstnerWaveModel::getWaves() {
   return this->waves;
 }
 
-double* GerstnerWaveModel::getDir() {
+Dvector GerstnerWaveModel::getDir() {
   return this->dir;
 }
 double GerstnerWaveModel::getIntens() {
@@ -50,9 +50,11 @@ void GerstnerWaveModel::add(GerstnerWave wave){
 
 Height GerstnerWaveModel::operator()(double t){
   Height h(this->lx, this->ly, this->nx, this->ny);
+  Height htemp(this->lx, this->ly, this->nx, this->ny);
   h.fill(0.0);
   for(GerstnerWave& wave : this->waves){
-    h+=wave(t, h, this->nx, this->ny, this->lx, this->ly);
+    h+=wave(t, htemp, this->nx, this->ny, this->lx, this->ly);
+    // cout << "h00 : " << h(0, 0) << "\n";
   }
   return h;
 }

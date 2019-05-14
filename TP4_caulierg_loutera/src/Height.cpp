@@ -6,6 +6,7 @@ Height::Height(double lx, double ly, int nx, int ny, const Dvector dvect)
     this->ly = ly;
     this->nx = nx;
     this->ny = ny;
+    assert(nx * ny == dvect.size());
     this->dvect = dvect;
 }
 Height::Height(double lx, double ly, int nx, int ny)

@@ -18,7 +18,7 @@ using namespace std;
 class GerstnerWaveModel : public WaveModel
 {
 	public :
-		GerstnerWaveModel(double* dir, double align, double intensite, double longueurOnde, double ajust, double lx, double ly, int nx, int ny, const vector <GerstnerWave> waves);
+		GerstnerWaveModel(Dvector dir, double align, double intensite, double longueurOnde, double ajust, double lx, double ly, int nx, int ny, const vector <GerstnerWave> waves);
 		~GerstnerWaveModel();
 		GerstnerWaveModel(const GerstnerWaveModel &waveModel);
 		Height operator()(double t);
@@ -27,7 +27,7 @@ class GerstnerWaveModel : public WaveModel
 		double getLy();
 		int getNx();
 		int getNy();
-		double* getDir();
+		Dvector getDir();
 		double getAlign();
 		double getIntens();
 		double getLong();

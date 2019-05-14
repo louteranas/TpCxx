@@ -1,6 +1,6 @@
 #include "GerstnerWave.h"
 
-GerstnerWave::GerstnerWave(double amplitude, double phase, double* direction, double frequence)
+GerstnerWave::GerstnerWave(double amplitude, double phase, Dvector direction, double frequence)
 {
     this->amplitude = amplitude;
     this->phase = phase;
@@ -32,7 +32,7 @@ GerstnerWave& GerstnerWave::operator=(GerstnerWave &&wave){
 double GerstnerWave::getAmpl() {
   return this->amplitude;
 }
-double* GerstnerWave::getDir() {
+Dvector GerstnerWave::getDir() {
   return this->direction;
 }
 double GerstnerWave::getPhase() {
@@ -43,10 +43,6 @@ double GerstnerWave::getFreq() {
 }
 
 GerstnerWave::~GerstnerWave() {
-  if(this->direction != nullptr){
-    delete[] this->direction;
-  }
-  this->direction = nullptr;
 
 }
 
@@ -58,34 +54,36 @@ GerstnerWave &GerstnerWave::operator=(const GerstnerWave &wave) {
   return *this;
 }
 
-Height GerstnerWave::operator()(double &t, Height &H, int &Nx, int &Ny, double &Lx, double &Ly) {
+Height GerstnerWave::operator()(double t, Height &H, int Nx, int Ny, double Lx, double Ly) const {
   double dx = (double)Lx / Nx;
   double dy = (double)Ly / Ny;
   H.fill(0.0);
   for (int i=0; i<Ny; i++){
     for (int j=0; j<Nx; j++){
-      // Calcul deXetZavec les equations (13) et (14)
+      // Calcul de X et Z avec les equations (13) et (14)
       // Ici onsuppose que K = (Ky,Kx)  et  k = | |K| |
       double Z, X[2];
-      double norme = sqrt(pow(this->direction[0], 2) + pow(this->direction[1], 2));
+      double norme = sqrt(pow(this->direction(0), 2) + pow(this->direction(1), 2));
 
       const double Xo[2]={i*dy, j*dx};
-      const double kdotx0=this->direction[0]*Xo[0]+this->direction[1]*Xo[1];
-      const double theta=kdotx0-(this->frequence)*t+(this->phase);
+      const double kdotx0=this->direction(0)*Xo[0]+this->direction(1)*Xo[1];
+      const double theta=(kdotx0-(this->frequence)*t+(this->phase) )* 3.1415926535 / 180;
+      //cout << "theta = " << theta << "\n";
 
-      X[0]=Xo[0]-(this->direction[0]/norme)*(this->amplitude)*sin(theta);
-      X[1]=Xo[1]-(this->direction[1]/norme)*(this->amplitude)*sin(theta);
+      X[0]=Xo[0]-(this->direction(0)/norme)*(this->amplitude)*sin(theta);
+      X[1]=Xo[1]-(this->direction(1)/norme)*(this->amplitude)*sin(theta);
 
       Z=(this->amplitude)*cos(theta);
 
-      // Calculdunouveau couple (I,J) correspondant a X
+      // Calcul du nouveau couple (I,J) correspondant a X
       //  ( cela  correspond  au  point  de  la  g r i l l e  l e  plus  proche)
       int I, J;
 
       I=(int(round(X[0]/dy))+Ny)%Ny;
       J=(int(round(X[1]/dx))+Nx)%Nx;
-
-      // Ajout de la contribution de hauteur devagueZen (I,J)
+      //cout << "(" << i << ", " << j << ") -> I = " << I << "; J = " << J << "\n";
+      // Ajout de la contribution de hauteur de vague Zen (I,J)
+      //cout << I << ", " << J << " += " << Z << "\n";
       H(I,J)+=Z;
     }
   }

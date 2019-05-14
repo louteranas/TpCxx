@@ -18,7 +18,7 @@ using namespace std;
 class GerstnerWave
 {
 	public :
-		GerstnerWave(double amplitude, double phase, double* direction, double frequence);
+		GerstnerWave(double amplitude, double phase, Dvector direction, double frequence);
 		~GerstnerWave();
 		GerstnerWave(const GerstnerWave &wave);
 		GerstnerWave &operator=(const GerstnerWave &wave);
@@ -26,14 +26,14 @@ class GerstnerWave
 		GerstnerWave &operator=(GerstnerWave &&wave);
 		double getAmpl();
 		double getPhase();
-		double* getDir();
+		Dvector getDir();
 		double getFreq();
-		Height operator()(double &t, Height &H, int &Nx, int &Ny, double &Lx, double &Ly);
+		Height operator()(double t, Height &H, int Nx, int Ny, double Lx, double Ly) const;
 
 	private:
 		double amplitude;
 		double phase;
-		double* direction;
+		Dvector direction;
 		double frequence;
 };
 
