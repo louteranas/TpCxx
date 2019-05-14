@@ -1,6 +1,6 @@
 #include "WaveModel.h"
 
-WaveModel::WaveModel(double* direction, double alignement, double intens, double longueur, double ajuste)
+WaveModel::WaveModel(Dvector direction, double alignement, double intens, double longueur, double ajuste)
 : dir(direction), align(alignement), intensite(intens), longueurOnde(longueur), ajust(ajuste)
 {
 
@@ -20,7 +20,7 @@ WaveModel::WaveModel(WaveModel &&wave) {
   std::swap(this->ajust, wave.ajust);
   }
 
-double* WaveModel::getDir() {
+Dvector WaveModel::getDir() {
   return this->dir;
 }
 double WaveModel::getIntens() {
@@ -37,9 +37,5 @@ double WaveModel::getAjust() {
 }
 
 WaveModel::~WaveModel() {
-  if(this->dir != nullptr){
-    delete[] this->dir;
-  }
-  this->dir = nullptr;
 
 }
