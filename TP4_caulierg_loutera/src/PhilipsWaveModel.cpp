@@ -66,3 +66,4 @@ PhilipsWaveModel &PhilipsWaveModel::operator=(const PhilipsWaveModel &waveModel)
   this->waves = waveModel.waves;
   return *this;
 }
+

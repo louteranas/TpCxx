@@ -10,9 +10,7 @@
 #include <ctime>
 #include <vector>
 #include <limits>
-#include "Dvector.h"
 #include "PhilipsWave.h"
-#include "Height.h"
 
 using namespace std;
 
@@ -39,6 +37,5 @@ class PhilipsWaveModel
 		int ny;
 		vector <PhilipsWave> waves;
 };
-
 
 #endif
