@@ -160,14 +160,16 @@ ostream &operator<<(ostream &out, const Dvector &vect){
     return out;
 }
 
-istream &operator>>(istream &in, const Dvector &vect){
-    cout << "coucou \n";
+istream &operator>>(istream &in, Dvector &vect){
+    //cout << "Veuillez renseigner la taille du vecteur\n";
+		int n = 0;
+		in >> n;
+		vect.resize(n);
     for(int i = 0; i< vect.size(); i++){
-        /*cout << i<<"\n";
-        double *number;
-        in >> *number;
-        memcpy(vect(0) +i*sizeof(double), number, sizeof(double));
-        */
+			double data = 0;
+        //cout << "Place N°:"<<i<<": Veuillez renseigner un nombre\n";
+				in >> data;
+				vect(i) = data;
     }
     return in;
 }
@@ -279,7 +281,7 @@ void Dvector::resize(int newSize, double init){
 }
 
 
-int Dvector::size()
+int &Dvector::size()
 {
     return this->dim;
 }

@@ -12,6 +12,7 @@ int main (void)
 {
 	Dvector v1(2, 4);
 	Dvector v2(2, 2);
+	Dvector v4;
 	//Test Q1
 	double access = v1(1);
 	assert(access == 4);
@@ -55,8 +56,11 @@ int main (void)
 	assert(v3(0) == 0.5 and v3(1) == 0.5);
 	cout << "Q4 OK !\n";
 	//Test Q5
-	cout << v1;
-	cout << "Q5 OK ! (Opérateur >> non testé)\n";
+	string input = "2 3 4";
+  istringstream stream(input);
+	stream >> v4;
+	assert(v4(0) == 3 and v4(1) == 4 and v4.size() == 2);
+	cout << "Q5 OK !\n";
 	//Test Q6
 	assert(v1 == v2 and !(v1 == v3));
 	cout << "Q6 OK !\n";
