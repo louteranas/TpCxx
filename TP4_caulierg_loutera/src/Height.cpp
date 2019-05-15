@@ -1,5 +1,14 @@
 #include "Height.h"
 
+Height::Height()
+{
+  this->lx = 0;
+  this->ly = 0;
+  this->nx = 0;
+  this->ny = 0;
+  this->dvect = Dvector();
+}
+
 Height::Height(double lx, double ly, int nx, int ny, const Dvector dvect)
 {
     this->lx = lx;

@@ -15,6 +15,7 @@ using namespace std;
 
 class Height{
 	public :
+		Height();
 		Height(double lx, double ly, int nx, int ny, const Dvector vect);
 		Height(double lx, double ly, int nx, int ny);
 	    ~Height();
