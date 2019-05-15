@@ -22,11 +22,11 @@ class WaveModel{
      	WaveModel &operator=(const WaveModel &wave) =delete;
 	    WaveModel(WaveModel &&wave);
       	WaveModel &operator=(WaveModel &&wave) =delete;
-		virtual Dvector getDir();
-		virtual double getAlign();
-		virtual double getIntens();
-		virtual double getLong();
-		virtual double getAjust();
+		virtual Dvector getDir() const =0;
+		virtual double getAlign() const =0;
+		virtual double getIntens() const =0;
+		virtual double getLong() const =0;
+		virtual double getAjust() const =0;
 	protected:
 	  Dvector dir;
 	  double align;

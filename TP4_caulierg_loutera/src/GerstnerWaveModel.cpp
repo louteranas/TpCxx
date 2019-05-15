@@ -28,19 +28,19 @@ const vector <GerstnerWave> GerstnerWaveModel::getWaves() {
   return this->waves;
 }
 
-Dvector GerstnerWaveModel::getDir() {
+Dvector GerstnerWaveModel::getDir() const {
   return this->dir;
 }
-double GerstnerWaveModel::getIntens() {
+double GerstnerWaveModel::getIntens() const {
   return this->intensite;
 }
-double GerstnerWaveModel::getAlign() {
+double GerstnerWaveModel::getAlign() const {
   return this->align;
 }
-double GerstnerWaveModel::getLong() {
+double GerstnerWaveModel::getLong() const {
   return this->longueurOnde;
 }
-double GerstnerWaveModel::getAjust() {
+double GerstnerWaveModel::getAjust() const {
   return this->ajust;
 }
 

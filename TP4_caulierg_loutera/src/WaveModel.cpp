@@ -26,22 +26,17 @@ WaveModel::WaveModel(WaveModel &&wave) {
   std::swap(this->ajust, wave.ajust);
   }
 
-Dvector WaveModel::getDir() {
-  return this->dir;
+/*Dvector WaveModel::getDir() const {
 }
-double WaveModel::getIntens() {
-  return this->intensite;
+double WaveModel::getIntens() const {
 }
-double WaveModel::getAlign() {
-  return this->align;
+double WaveModel::getAlign() const {
 }
-double WaveModel::getLong() {
-  return this->longueurOnde;
+double WaveModel::getLong() const {
 }
-double WaveModel::getAjust() {
-  return this->ajust;
+double WaveModel::getAjust() const {
 }
-
+*/
 WaveModel::~WaveModel() {
 
 }

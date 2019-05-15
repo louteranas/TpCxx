@@ -24,6 +24,8 @@ class Dvector{
 		Dvector(string file);
 		~Dvector();
 		void fft();
+		void fft2d(int nx, int ny);
+		void ifft2d(int nx, int ny);
 		void ifft();
 		void display(ostream& str) const;
 		int size();
