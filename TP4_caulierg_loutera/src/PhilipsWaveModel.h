@@ -11,10 +11,11 @@
 #include <vector>
 #include <limits>
 #include "PhilipsWave.h"
+#include "WaveModel.h"
 
 using namespace std;
 
-class PhilipsWaveModel
+class PhilipsWaveModel : public WaveModel
 {
 	public :
 		PhilipsWaveModel(double lx, double ly, int nx, int ny, const vector <PhilipsWave> waves);

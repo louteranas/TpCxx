@@ -27,8 +27,8 @@ class WaveModel{
 		virtual double getLong();
 		virtual double getAjust();
 	protected:
-	    Dvector dir;
-	    double align;
+	  Dvector dir;
+	  double align;
 		double intensite;
 		double longueurOnde;
 		double ajust;
