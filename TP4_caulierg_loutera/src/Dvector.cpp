@@ -270,7 +270,7 @@ bool Dvector::operator==(const Dvector &v2){
         return false;
     }
     for(int i = 0; i< v2.dim; i++){
-        if(this->data[i] != v2.data[i]){
+        if(this->data[i][0] != v2.data[i][0] or this->data[i][1] != v2.data[i][1]){
             return false;
         }
     }

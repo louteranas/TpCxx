@@ -19,7 +19,7 @@ using namespace std;
 class PhilipsWave
 {
 	public :
-	PhilipsWave(double amplitude, Dvector windDir, double windSpeed, int Lx, int Ly, int Nx, int Ny);
+	PhilipsWave(double amplitude, Dvector windDir, double windSpeed);
 	~PhilipsWave();
 	PhilipsWave(const PhilipsWave &wave);
 	PhilipsWave &operator=(const PhilipsWave &wave);
@@ -28,10 +28,6 @@ class PhilipsWave
 	double getAmpl();
 	Dvector getWindDir();
 	double getWindSpeed();
-	int getLy();
-	int getLx();
-	int getNx();
-	int getNy();
 	double ph(double kx, double ky) const;
 	Height operator()(double t, Height &H, int Nx, int Ny, double Lx, double Ly) const;
 
@@ -40,10 +36,6 @@ class PhilipsWave
 		double amplitude;
 		Dvector windDir;
 		double windSpeed;
-		int Lx;
-		int Ly;
-		int Nx;
-		int Ny;
 };
 
 #endif
