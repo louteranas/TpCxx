@@ -77,3 +77,8 @@ PhilipsWave &PhilipsWave::operator=(const PhilipsWave &wave) {
   this->Ny = wave.Ny;
   return *this;
 }
+
+Height PhilipsWave::operator()(double t, Height &H, int Nx, int Ny, double Lx, double Ly) const {
+  
+  return H;
+}

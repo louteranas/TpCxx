@@ -18,9 +18,8 @@ using namespace std;
 class Ocean
 {
 	public :
-		Ocean(double lx, double ly, int nx, int ny, const vector <PhilipsWave> waves);
+		Ocean(double lx, double ly, int nx, int ny, WaveModel &model);
 		~Ocean();
-		Ocean(const Ocean &oc);
 		void generateHeight();
 		void compute();
 		void gl_vertices();
@@ -31,8 +30,8 @@ class Ocean
 		int nx;
 		int ny;
 		double t;
-		Height H;
-		int model; // Gertsner = 0, Philips = autre
+		Height h;
+		WaveModel &model;
 		double** vertices;
 		vector <PhilipsWave> waves;
 };

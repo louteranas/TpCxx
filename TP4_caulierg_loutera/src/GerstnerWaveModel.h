@@ -27,11 +27,11 @@ class GerstnerWaveModel : public WaveModel
 		double getLy();
 		int getNx();
 		int getNy();
-		Dvector getDir();
-		double getAlign();
-		double getIntens();
-		double getLong();
-		double getAjust();
+		Dvector getDir() const;
+		double getAlign() const;
+		double getIntens() const;
+		double getLong() const;
+		double getAjust() const;
 		const vector <GerstnerWave> getWaves();
 
 	private:

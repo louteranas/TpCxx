@@ -377,3 +377,75 @@ void Dvector::ifft() {
     this->data[i][0] = this->data[i][0] / this->dim;
   }  
 }
+
+void Dvector::fft2d(int nx, int ny){
+  Dvector vnx(nx);
+  Dvector vny(ny);
+  // FFT DE CHAQUE LIGNE
+  for(int i = 0; i < ny; i++) {
+    //Recopiage de la ligne i dans vnx
+    for(int x = 0; x < nx; x++) {
+      vnx.getdata()[x][0] = this->data[i*nx + x][0];
+      vnx.getdata()[x][1] = this->data[i*nx + x][1];
+    }
+    //Fft 1D de vnx
+    vnx.fft();
+    //Recopiage de vnx dans la ligne i
+    for(int x = 0; x < nx; x++) {
+      this->data[i*nx + x][0] = vnx.getdata()[x][0];
+      this->data[i*nx + x][1] = vnx.getdata()[x][1];
+    }
+  }
+  // FFT DE CHAQUE COLONNE (modifiées par la 1ere étape)
+  for(int j = 0; j < nx; j++) {
+    //Recopiage de la colone j dans vny
+    for(int x = 0; x < ny; x++) {
+      vny.getdata()[x][0] = this->data[x*nx + j][0];
+      vny.getdata()[x][1] = this->data[x*nx + j][1];
+    }
+    //FFT 1d de vny
+    vny.fft();
+    //Recopiage de vny dans la colone j
+    for(int x = 0; x < ny; x++) {
+      this->data[x*nx + j][0] = vny.getdata()[x][0];
+      this->data[x*nx + j][1] = vny.getdata()[x][1];
+    }
+  }
+}
+
+void Dvector::ifft2d(int nx, int ny) {
+  Dvector vnx(nx);
+  Dvector vny(ny);
+
+  // FFT DE CHAQUE COLONNE (modifiées par la 1ere étape)
+  for(int j = 0; j < nx; j++) {
+    //Recopiage de la colone j dans vny
+    for(int x = 0; x < ny; x++) {
+      vny.getdata()[x][0] = this->data[x*nx + j][0];
+      vny.getdata()[x][1] = this->data[x*nx + j][1];
+    }
+    //IFFT 1d de vny
+    vny.ifft();
+    //Recopiage de vny dans la colone j
+    for(int x = 0; x < ny; x++) {
+      this->data[x*nx + j][0] = vny.getdata()[x][0];
+      this->data[x*nx + j][1] = vny.getdata()[x][1];
+    }
+  }
+
+  // FFT DE CHAQUE LIGNE
+  for(int i = 0; i < ny; i++) {
+    //Recopiage de la ligne i dans vnx
+    for(int x = 0; x < nx; x++) {
+      vnx.getdata()[x][0] = this->data[i*nx + x][0];
+      vnx.getdata()[x][1] = this->data[i*nx + x][1];
+    }
+    //Fft 1D de vnx
+    vnx.ifft();
+    //Recopiage de vnx dans la ligne i
+    for(int x = 0; x < nx; x++) {
+      this->data[i*nx + x][0] = vnx.getdata()[x][0];
+      this->data[i*nx + x][1] = vnx.getdata()[x][1];
+    }
+  }
+}

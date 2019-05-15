@@ -31,6 +31,7 @@ class PhilipsWave
 	int getLx();
 	int getNx();
 	int getNy();
+	Height operator()(double t, Height &H, int Nx, int Ny, double Lx, double Ly) const;
 
 
 	private:

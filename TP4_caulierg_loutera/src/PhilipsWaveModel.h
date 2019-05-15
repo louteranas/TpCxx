@@ -18,7 +18,7 @@ using namespace std;
 class PhilipsWaveModel : public WaveModel
 {
 	public :
-		PhilipsWaveModel(double lx, double ly, int nx, int ny, const vector <PhilipsWave> waves);
+		PhilipsWaveModel(Dvector dir, double align, double intensite, double longueurOnde, double ajust, double lx, double ly, int nx, int ny, const vector <PhilipsWave> waves);
 		~PhilipsWaveModel();
 		PhilipsWaveModel(const PhilipsWaveModel &waveModel);
 		PhilipsWaveModel &operator=(const PhilipsWaveModel &waveModel);
@@ -29,6 +29,12 @@ class PhilipsWaveModel : public WaveModel
 		double getLy();
 		int getNx();
 		int getNy();
+		Dvector getDir() const;
+		double getAlign() const;
+		double getIntens() const;
+		double getLong() const;
+		double getAjust() const;
+
 		const vector <PhilipsWave> getWaves();
 
 	private:

@@ -48,19 +48,19 @@ void PhilipsWaveModel::add(PhilipsWave wave){
   (this->waves).push_back(wave);
 }
 
-Dvector PhilipsWaveModel::getDir() {
+Dvector PhilipsWaveModel::getDir() const {
   return this->dir;
 }
-double PhilipsWaveModel::getIntens() {
+double PhilipsWaveModel::getIntens() const {
   return this->intensite;
 }
-double PhilipsWaveModel::getAlign() {
+double PhilipsWaveModel::getAlign() const {
   return this->align;
 }
-double PhilipsWaveModel::getLong() {
+double PhilipsWaveModel::getLong() const {
   return this->longueurOnde;
 }
-double PhilipsWaveModel::getAjust() {
+double PhilipsWaveModel::getAjust() const {
   return this->ajust;
 }
 
