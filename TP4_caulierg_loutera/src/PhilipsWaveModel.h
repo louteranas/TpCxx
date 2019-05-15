@@ -34,6 +34,7 @@ class PhilipsWaveModel : public WaveModel
 		double getIntens() const;
 		double getLong() const;
 		double getAjust() const;
+		Height operator()(double t);
 
 		const vector <PhilipsWave> getWaves();
 

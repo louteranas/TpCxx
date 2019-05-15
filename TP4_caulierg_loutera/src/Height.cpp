@@ -24,7 +24,7 @@ Height::Height(double lx, double ly, int nx, int ny)
     this->ly = ly;
     this->nx = nx;
     this->ny = ny;
-    this->dvect = Dvector((nx + 1) * (ny + 1));
+    this->dvect = Dvector(nx * ny);
 }
 
 

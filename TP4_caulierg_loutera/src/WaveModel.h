@@ -10,7 +10,8 @@
 #include <ctime>
 
 #include <limits>
-#include "Dvector.h"
+#include "Height.h"
+
 using namespace std;
 
 class WaveModel{
@@ -27,6 +28,7 @@ class WaveModel{
 		virtual double getIntens() const =0;
 		virtual double getLong() const =0;
 		virtual double getAjust() const =0;
+		virtual Height operator()(double t) = 0;
 	protected:
 	  Dvector dir;
 	  double align;

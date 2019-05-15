@@ -33,7 +33,6 @@ class Ocean
 		Height h;
 		WaveModel &model;
 		double** vertices;
-		vector <PhilipsWave> waves;
 };
 
 #endif

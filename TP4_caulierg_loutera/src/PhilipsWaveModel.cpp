@@ -11,6 +11,10 @@ PhilipsWaveModel::PhilipsWaveModel(const PhilipsWaveModel &wave)
 {
 
 }
+Height PhilipsWaveModel::operator()(double t)
+{
+  return Height(this->lx, this->ly, this->nx, this->ny);
+};
 //
 // PhilipsWaveModel::PhilipsWaveModel(PhilipsWaveModel &&waveModel) {
 //   std::swap(this->lx, waveModel.lx);
