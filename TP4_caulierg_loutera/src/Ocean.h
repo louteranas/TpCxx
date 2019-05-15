@@ -20,6 +20,11 @@ class Ocean
 	public :
 		Ocean(double lx, double ly, int nx, int ny, WaveModel &model);
 		~Ocean();
+		double getT();
+		double getLx();
+		double getLy();
+		int getNx();
+		int getNy();
 		void generateHeight();
 		void compute();
 		void gl_vertices();

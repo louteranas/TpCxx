@@ -35,3 +35,19 @@ void Ocean ::gl_vertices(){
       this->vertices[i][2] = this->h.getDvect()(i);
   }
 }
+
+double Ocean::getT() {
+  return this->t;
+}
+int Ocean::getNx() {
+  return this->nx;
+}
+int Ocean::getNy() {
+  return this->ny;
+}
+double Ocean::getLx() {
+  return this->lx;
+}
+double Ocean::getLy() {
+  return this->ly;
+}
