@@ -1,0 +1,1024 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00     1248     0.00     0.00  std::__detail::_Mod<unsigned long, 4294967296ul, 1ul, 0ul, true, true>::__calc(unsigned long)
+  0.00      0.00     0.00     1248     0.00     0.00  unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long)
+  0.00      0.00     0.00     1246     0.00     0.00  std::__detail::_Mod<unsigned long, 624ul, 1ul, 0ul, true, true>::__calc(unsigned long)
+  0.00      0.00     0.00     1246     0.00     0.00  unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long)
+  0.00      0.00     0.00      232     0.00     0.00  Dvector::getdata()
+  0.00      0.00     0.00       76     0.00     0.00  Dvector::~Dvector()
+  0.00      0.00     0.00       52     0.00     0.00  Dvector::getdata() const
+  0.00      0.00     0.00       40     0.00     0.00  Dvector::Dvector(int, double)
+  0.00      0.00     0.00       39     0.00     0.00  std::remove_reference<int&>::type&& std::move<int&>(int&)
+  0.00      0.00     0.00       29     0.00     0.00  Dvector::operator()(int)
+  0.00      0.00     0.00       27     0.00     0.00  std::remove_reference<double**&>::type&& std::move<double**&>(double**&)
+  0.00      0.00     0.00       19     0.00     0.00  Dvector::Dvector(Dvector const&)
+  0.00      0.00     0.00       17     0.00     0.00  Dvector::Dvector()
+  0.00      0.00     0.00       14     0.00     0.00  __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::base() const
+  0.00      0.00     0.00       13     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&)
+  0.00      0.00     0.00       12     0.00     0.00  __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::base() const
+  0.00      0.00     0.00       12     0.00     0.00  PhilipsWave* std::__addressof<PhilipsWave>(PhilipsWave&)
+  0.00      0.00     0.00       12     0.00     0.00  std::remove_reference<double&>::type&& std::move<double&>(double&)
+  0.00      0.00     0.00       11     0.00     0.00  Dvector::size()
+  0.00      0.00     0.00       11     0.00     0.00  Dvector::operator=(Dvector const&)
+  0.00      0.00     0.00       11     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator()
+  0.00      0.00     0.00       11     0.00     0.00  PhilipsWave const& std::forward<PhilipsWave const&>(std::remove_reference<PhilipsWave const&>::type&)
+  0.00      0.00     0.00       10     0.00     0.00  Dvector::fft()
+  0.00      0.00     0.00       10     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::size() const
+  0.00      0.00     0.00        9     0.00     0.00  PhilipsWave::~PhilipsWave()
+  0.00      0.00     0.00        9     0.00     0.00  Dvector::operator=(Dvector&&)
+  0.00      0.00     0.00        9     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double**> >, std::is_move_constructible<double**>, std::is_move_assignable<double**> >::value, void>::type std::swap<double**>(double**&, double**&)
+  0.00      0.00     0.00        8     0.00     0.00  Height::getDvect()
+  0.00      0.00     0.00        8     0.00     0.00  __gnu_cxx::new_allocator<PhilipsWave>::max_size() const
+  0.00      0.00     0.00        8     0.00     0.00  PhilipsWave const* std::__make_move_if_noexcept_iterator<PhilipsWave, PhilipsWave const*>(PhilipsWave*)
+  0.00      0.00     0.00        7     0.00     0.00  PhilipsWave::PhilipsWave(PhilipsWave const&)
+  0.00      0.00     0.00        7     0.00     0.00  Height::~Height()
+  0.00      0.00     0.00        7     0.00     0.00  void std::_Destroy<PhilipsWave>(PhilipsWave*)
+  0.00      0.00     0.00        7     0.00     0.00  operator new(unsigned long, void*)
+  0.00      0.00     0.00        6     0.00     0.00  __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::__normal_iterator(PhilipsWave* const&)
+  0.00      0.00     0.00        6     0.00     0.00  bool __gnu_cxx::operator!=<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&)
+  0.00      0.00     0.00        6     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator() const
+  0.00      0.00     0.00        6     0.00     0.00  std::remove_reference<Dvector&>::type&& std::move<Dvector&>(Dvector&)
+  0.00      0.00     0.00        5     0.00     0.00  Dvector::ifft()
+  0.00      0.00     0.00        5     0.00     0.00  __gnu_cxx::new_allocator<PhilipsWave>::~new_allocator()
+  0.00      0.00     0.00        5     0.00     0.00  std::allocator<PhilipsWave>::~allocator()
+  0.00      0.00     0.00        5     0.00     0.00  void std::_Destroy_aux<false>::__destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*)
+  0.00      0.00     0.00        5     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_deallocate(PhilipsWave*, unsigned long)
+  0.00      0.00     0.00        5     0.00     0.00  void std::_Construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&)
+  0.00      0.00     0.00        5     0.00     0.00  void std::_Destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*)
+  0.00      0.00     0.00        5     0.00     0.00  void std::_Destroy<PhilipsWave*, PhilipsWave>(PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&)
+  0.00      0.00     0.00        4     0.00     0.00  Height::Height(double, double, int, int)
+  0.00      0.00     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<PhilipsWave>::deallocate(PhilipsWave*, unsigned long)
+  0.00      0.00     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<PhilipsWave>::allocate(unsigned long, void const*)
+  0.00      0.00     0.00        4     0.00     0.00  __gnu_cxx::new_allocator<PhilipsWave>::new_allocator(__gnu_cxx::new_allocator<PhilipsWave> const&)
+  0.00      0.00     0.00        4     0.00     0.00  __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::__normal_iterator(PhilipsWave const* const&)
+  0.00      0.00     0.00        4     0.00     0.00  __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator++()
+  0.00      0.00     0.00        4     0.00     0.00  __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator*() const
+  0.00      0.00     0.00        4     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::max_size() const
+  0.00      0.00     0.00        4     0.00     0.00  std::allocator<PhilipsWave>::allocator(std::allocator<PhilipsWave> const&)
+  0.00      0.00     0.00        4     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_allocate(unsigned long)
+  0.00      0.00     0.00        4     0.00     0.00  std::allocator_traits<std::allocator<PhilipsWave> >::deallocate(std::allocator<PhilipsWave>&, PhilipsWave*, unsigned long)
+  0.00      0.00     0.00        4     0.00     0.00  std::allocator_traits<std::allocator<PhilipsWave> >::allocate(std::allocator<PhilipsWave>&, unsigned long)
+  0.00      0.00     0.00        4     0.00     0.00  std::allocator_traits<std::allocator<PhilipsWave> >::max_size(std::allocator<PhilipsWave> const&)
+  0.00      0.00     0.00        4     0.00     0.00  PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*)
+  0.00      0.00     0.00        4     0.00     0.00  PhilipsWave* std::uninitialized_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*)
+  0.00      0.00     0.00        4     0.00     0.00  PhilipsWave* std::__uninitialized_copy_a<PhilipsWave const*, PhilipsWave*, PhilipsWave>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*, std::allocator<PhilipsWave>&)
+  0.00      0.00     0.00        4     0.00     0.00  PhilipsWave* std::__uninitialized_move_if_noexcept_a<PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave> >(PhilipsWave*, PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&)
+  0.00      0.00     0.00        4     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double> >, std::is_move_constructible<double>, std::is_move_assignable<double> >::value, void>::type std::swap<double>(double&, double&)
+  0.00      0.00     0.00        3     0.00     0.00  Dvector::operator==(Dvector const&)
+  0.00      0.00     0.00        3     0.00     0.00  bool __gnu_cxx::operator!=<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&)
+  0.00      0.00     0.00        3     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::~_Vector_impl()
+  0.00      0.00     0.00        3     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::~_Vector_base()
+  0.00      0.00     0.00        3     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end()
+  0.00      0.00     0.00        3     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin()
+  0.00      0.00     0.00        3     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::~vector()
+  0.00      0.00     0.00        2     0.00     0.00  PhilipsWave::PhilipsWave(double, Dvector, double)
+  0.00      0.00     0.00        2     0.00     0.00  Height::Height(Height const&)
+  0.00      0.00     0.00        2     0.00     0.00  Height::operator=(Height&&)
+  0.00      0.00     0.00        2     0.00     0.00  Height::operator+=(Height)
+  0.00      0.00     0.00        2     0.00     0.00  void __gnu_cxx::new_allocator<PhilipsWave>::construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::__alloc_traits<std::allocator<PhilipsWave> >::_S_select_on_copy(std::allocator<PhilipsWave> const&)
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator++()
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::difference_type __gnu_cxx::operator-<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&)
+  0.00      0.00     0.00        2     0.00     0.00  PhilipsWave::operator()(double, Height&, int, int, double, double) const
+  0.00      0.00     0.00        2     0.00     0.00  PhilipsWaveModel::getDir() const
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator*() const
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_check_len(unsigned long, char const*) const
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end() const
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin() const
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::_Vector_impl(std::allocator<PhilipsWave> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_create_storage(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base(unsigned long, std::allocator<PhilipsWave> const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::random_device::random_device(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::random_device::~random_device()
+  0.00      0.00     0.00        2     0.00     0.00  std::random_device::operator()()
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator_traits<std::allocator<PhilipsWave> >::select_on_container_copy_construction(std::allocator<PhilipsWave> const&)
+  0.00      0.00     0.00        2     0.00     0.00  void std::allocator_traits<std::allocator<PhilipsWave> >::construct<PhilipsWave, PhilipsWave const&>(std::allocator<PhilipsWave>&, PhilipsWave*, PhilipsWave const&)
+  0.00      0.00     0.00        2     0.00     0.00  PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*)
+  0.00      0.00     0.00        2     0.00     0.00  std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine(unsigned long)
+  0.00      0.00     0.00        2     0.00     0.00  void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::push_back(PhilipsWave const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&)
+  0.00      0.00     0.00        2     0.00     0.00  PhilipsWave* std::uninitialized_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*)
+  0.00      0.00     0.00        2     0.00     0.00  PhilipsWave* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*, PhilipsWave>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*, std::allocator<PhilipsWave>&)
+  0.00      0.00     0.00        2     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.00     0.00        2     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Dvector> >, std::is_move_constructible<Dvector>, std::is_move_assignable<Dvector> >::value, void>::type std::swap<Dvector>(Dvector&, Dvector&)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN11PhilipsWaveC2Ed7Dvectord
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN12GerstnerWaveC2Edd7Dvectord
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN16PhilipsWaveModelC2E7DvectorddddddiiSt6vectorI11PhilipsWaveSaIS2_EE
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN17GerstnerWaveModelC2E7DvectorddddddiiSt6vectorI12GerstnerWaveSaIS2_EE
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN5OceanC2EddiiR9WaveModel
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN6HeightC2Ev
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN7DvectorC2Ev
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN9WaveModelC2Ev
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  PhilipsWave::getWindDir()
+  0.00      0.00     0.00        1     0.00     0.00  PhilipsWave::getWindSpeed()
+  0.00      0.00     0.00        1     0.00     0.00  PhilipsWave::getAmpl()
+  0.00      0.00     0.00        1     0.00     0.00  PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double, double, double, double, double, int, int, std::vector<PhilipsWave, std::allocator<PhilipsWave> >)
+  0.00      0.00     0.00        1     0.00     0.00  PhilipsWaveModel::~PhilipsWaveModel()
+  0.00      0.00     0.00        1     0.00     0.00  PhilipsWaveModel::operator()(double)
+  0.00      0.00     0.00        1     0.00     0.00  Ocean::getT()
+  0.00      0.00     0.00        1     0.00     0.00  Ocean::getLx()
+  0.00      0.00     0.00        1     0.00     0.00  Ocean::getLy()
+  0.00      0.00     0.00        1     0.00     0.00  Ocean::Ocean(double, double, int, int, WaveModel&)
+  0.00      0.00     0.00        1     0.00     0.00  Ocean::~Ocean()
+  0.00      0.00     0.00        1     0.00     0.00  Height::fill(double)
+  0.00      0.00     0.00        1     0.00     0.00  Height::Height()
+  0.00      0.00     0.00        1     0.00     0.00  Dvector::fft2d(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  Dvector::ifft2d(int, int)
+  0.00      0.00     0.00        1     0.00     0.00  WaveModel::WaveModel(Dvector, double, double, double, double)
+  0.00      0.00     0.00        1     0.00     0.00  WaveModel::~WaveModel()
+  0.00      0.00     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<PhilipsWave>::new_allocator()
+  0.00      0.00     0.00        1     0.00     0.00  PhilipsWaveModel::getLong() const
+  0.00      0.00     0.00        1     0.00     0.00  PhilipsWaveModel::getAjust() const
+  0.00      0.00     0.00        1     0.00     0.00  PhilipsWaveModel::getAlign() const
+  0.00      0.00     0.00        1     0.00     0.00  PhilipsWaveModel::getIntens() const
+  0.00      0.00     0.00        1     0.00     0.00  std::allocator<PhilipsWave>::allocator()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::_Vector_impl()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base()
+  0.00      0.00     0.00        1     0.00     0.00  std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00    1248/1248        unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long) [9]
+[8]      0.0    0.00    0.00    1248         std::__detail::_Mod<unsigned long, 4294967296ul, 1ul, 0ul, true, true>::__calc(unsigned long) [8]
+-----------------------------------------------
+                0.00    0.00    1248/1248        std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long) [102]
+[9]      0.0    0.00    0.00    1248         unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long) [9]
+                0.00    0.00    1248/1248        std::__detail::_Mod<unsigned long, 4294967296ul, 1ul, 0ul, true, true>::__calc(unsigned long) [8]
+-----------------------------------------------
+                0.00    0.00    1246/1246        unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long) [11]
+[10]     0.0    0.00    0.00    1246         std::__detail::_Mod<unsigned long, 624ul, 1ul, 0ul, true, true>::__calc(unsigned long) [10]
+-----------------------------------------------
+                0.00    0.00    1246/1246        std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long) [102]
+[11]     0.0    0.00    0.00    1246         unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long) [11]
+                0.00    0.00    1246/1246        std::__detail::_Mod<unsigned long, 624ul, 1ul, 0ul, true, true>::__calc(unsigned long) [10]
+-----------------------------------------------
+                0.00    0.00       8/232         main [6]
+                0.00    0.00      32/232         Dvector::fft2d(int, int) [142]
+                0.00    0.00      32/232         Dvector::ifft2d(int, int) [143]
+                0.00    0.00     160/232         Dvector::fft() [30]
+[12]     0.0    0.00    0.00     232         Dvector::getdata() [12]
+-----------------------------------------------
+                0.00    0.00       1/76          WaveModel::~WaveModel() [145]
+                0.00    0.00       1/76          PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double, double, double, double, double, int, int, std::vector<PhilipsWave, std::allocator<PhilipsWave> >) [132]
+                0.00    0.00       1/76          Height::Height() [141]
+                0.00    0.00       2/76          std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Dvector> >, std::is_move_constructible<Dvector>, std::is_move_assignable<Dvector> >::value, void>::type std::swap<Dvector>(Dvector&, Dvector&) [110]
+                0.00    0.00       2/76          Dvector::fft2d(int, int) [142]
+                0.00    0.00       2/76          Dvector::ifft2d(int, int) [143]
+                0.00    0.00       4/76          Height::Height(double, double, int, int) [54]
+                0.00    0.00       7/76          Height::~Height() [39]
+                0.00    0.00       8/76          Height::operator+=(Height) [82]
+                0.00    0.00       9/76          PhilipsWave::~PhilipsWave() [32]
+                0.00    0.00      11/76          main [6]
+                0.00    0.00      28/76          Dvector::fft() [30]
+[13]     0.0    0.00    0.00      76         Dvector::~Dvector() [13]
+-----------------------------------------------
+                0.00    0.00      52/52          Dvector::operator=(Dvector const&) [27]
+[14]     0.0    0.00    0.00      52         Dvector::getdata() const [14]
+-----------------------------------------------
+                0.00    0.00       2/40          Dvector::fft2d(int, int) [142]
+                0.00    0.00       2/40          Dvector::ifft2d(int, int) [143]
+                0.00    0.00       4/40          main [6]
+                0.00    0.00       4/40          Height::Height(double, double, int, int) [54]
+                0.00    0.00      28/40          Dvector::fft() [30]
+[15]     0.0    0.00    0.00      40         Dvector::Dvector(int, double) [15]
+-----------------------------------------------
+                0.00    0.00      39/39          std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [22]
+[16]     0.0    0.00    0.00      39         std::remove_reference<int&>::type&& std::move<int&>(int&) [16]
+-----------------------------------------------
+                0.00    0.00       4/29          Height::fill(double) [140]
+                0.00    0.00       9/29          main [6]
+                0.00    0.00      16/29          Height::operator+=(Height) [82]
+[17]     0.0    0.00    0.00      29         Dvector::operator()(int) [17]
+-----------------------------------------------
+                0.00    0.00      27/27          std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double**> >, std::is_move_constructible<double**>, std::is_move_assignable<double**> >::value, void>::type std::swap<double**>(double**&, double**&) [34]
+[18]     0.0    0.00    0.00      27         std::remove_reference<double**&>::type&& std::move<double**&>(double**&) [18]
+-----------------------------------------------
+                0.00    0.00       1/19          WaveModel::WaveModel(Dvector, double, double, double, double) [144]
+                0.00    0.00       1/19          PhilipsWave::getWindDir() [129]
+                0.00    0.00       1/19          PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double, double, double, double, double, int, int, std::vector<PhilipsWave, std::allocator<PhilipsWave> >) [132]
+                0.00    0.00       2/19          std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Dvector> >, std::is_move_constructible<Dvector>, std::is_move_assignable<Dvector> >::value, void>::type std::swap<Dvector>(Dvector&, Dvector&) [110]
+                0.00    0.00       2/19          PhilipsWaveModel::getDir() const [88]
+                0.00    0.00       4/19          main [6]
+                0.00    0.00       8/19          Height::getDvect() [35]
+[19]     0.0    0.00    0.00      19         Dvector::Dvector(Dvector const&) [19]
+-----------------------------------------------
+                0.00    0.00       2/17          PhilipsWave::PhilipsWave(double, Dvector, double) [79]
+                0.00    0.00       2/17          Height::Height() [141]
+                0.00    0.00       2/17          Height::Height(Height const&) [80]
+                0.00    0.00       4/17          Height::Height(double, double, int, int) [54]
+                0.00    0.00       7/17          PhilipsWave::PhilipsWave(PhilipsWave const&) [38]
+[20]     0.0    0.00    0.00      17         Dvector::Dvector() [20]
+-----------------------------------------------
+                0.00    0.00       4/14          void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+                0.00    0.00       4/14          __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::difference_type __gnu_cxx::operator-<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [86]
+                0.00    0.00       6/14          bool __gnu_cxx::operator!=<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [73]
+[21]     0.0    0.00    0.00      14         __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::base() const [21]
+-----------------------------------------------
+                0.00    0.00       4/13          Height::operator=(Height&&) [81]
+                0.00    0.00       9/13          Dvector::operator=(Dvector&&) [33]
+[22]     0.0    0.00    0.00      13         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [22]
+                0.00    0.00      39/39          std::remove_reference<int&>::type&& std::move<int&>(int&) [16]
+-----------------------------------------------
+                0.00    0.00      12/12          bool __gnu_cxx::operator!=<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [43]
+[23]     0.0    0.00    0.00      12         __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::base() const [23]
+-----------------------------------------------
+                0.00    0.00       1/12          PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*) [67]
+                0.00    0.00       4/12          PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*) [101]
+                0.00    0.00       7/12          void std::_Destroy_aux<false>::__destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*) [49]
+[24]     0.0    0.00    0.00      12         PhilipsWave* std::__addressof<PhilipsWave>(PhilipsWave&) [24]
+-----------------------------------------------
+                0.00    0.00      12/12          std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double> >, std::is_move_constructible<double>, std::is_move_assignable<double> >::value, void>::type std::swap<double>(double&, double&) [71]
+[25]     0.0    0.00    0.00      12         std::remove_reference<double&>::type&& std::move<double&>(double&) [25]
+-----------------------------------------------
+                0.00    0.00       1/11          Height::fill(double) [140]
+                0.00    0.00      10/11          Height::operator+=(Height) [82]
+[26]     0.0    0.00    0.00      11         Dvector::size() [26]
+-----------------------------------------------
+                0.00    0.00       2/11          PhilipsWave::PhilipsWave(double, Dvector, double) [79]
+                0.00    0.00       2/11          Height::Height(Height const&) [80]
+                0.00    0.00       7/11          PhilipsWave::PhilipsWave(PhilipsWave const&) [38]
+[27]     0.0    0.00    0.00      11         Dvector::operator=(Dvector const&) [27]
+                0.00    0.00      52/52          Dvector::getdata() const [14]
+-----------------------------------------------
+                0.00    0.00       2/11          std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+                0.00    0.00       3/11          std::vector<PhilipsWave, std::allocator<PhilipsWave> >::~vector() [78]
+                0.00    0.00       6/11          void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+[28]     0.0    0.00    0.00      11         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator() [28]
+-----------------------------------------------
+                0.00    0.00       2/11          void std::allocator_traits<std::allocator<PhilipsWave> >::construct<PhilipsWave, PhilipsWave const&>(std::allocator<PhilipsWave>&, PhilipsWave*, PhilipsWave const&) [100]
+                0.00    0.00       2/11          void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+                0.00    0.00       2/11          void __gnu_cxx::new_allocator<PhilipsWave>::construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [83]
+                0.00    0.00       5/11          void std::_Construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [51]
+[29]     0.0    0.00    0.00      11         PhilipsWave const& std::forward<PhilipsWave const&>(std::remove_reference<PhilipsWave const&>::type&) [29]
+-----------------------------------------------
+                                  28             Dvector::fft() [30]
+                0.00    0.00       1/10          main [6]
+                0.00    0.00       4/10          Dvector::fft2d(int, int) [142]
+                0.00    0.00       5/10          Dvector::ifft() [46]
+[30]     0.0    0.00    0.00      10+28      Dvector::fft() [30]
+                0.00    0.00     160/232         Dvector::getdata() [12]
+                0.00    0.00      28/40          Dvector::Dvector(int, double) [15]
+                0.00    0.00      28/76          Dvector::~Dvector() [13]
+                                  28             Dvector::fft() [30]
+-----------------------------------------------
+                0.00    0.00       2/10          std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+                0.00    0.00       8/10          std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_check_len(unsigned long, char const*) const [90]
+[31]     0.0    0.00    0.00      10         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::size() const [31]
+-----------------------------------------------
+                0.00    0.00       2/9           main [6]
+                0.00    0.00       7/9           void std::_Destroy<PhilipsWave>(PhilipsWave*) [40]
+[32]     0.0    0.00    0.00       9         PhilipsWave::~PhilipsWave() [32]
+                0.00    0.00       9/76          Dvector::~Dvector() [13]
+-----------------------------------------------
+                0.00    0.00       1/9           Height::Height() [141]
+                0.00    0.00       4/9           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Dvector> >, std::is_move_constructible<Dvector>, std::is_move_assignable<Dvector> >::value, void>::type std::swap<Dvector>(Dvector&, Dvector&) [110]
+                0.00    0.00       4/9           Height::Height(double, double, int, int) [54]
+[33]     0.0    0.00    0.00       9         Dvector::operator=(Dvector&&) [33]
+                0.00    0.00       9/13          std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [22]
+                0.00    0.00       9/9           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double**> >, std::is_move_constructible<double**>, std::is_move_assignable<double**> >::value, void>::type std::swap<double**>(double**&, double**&) [34]
+-----------------------------------------------
+                0.00    0.00       9/9           Dvector::operator=(Dvector&&) [33]
+[34]     0.0    0.00    0.00       9         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double**> >, std::is_move_constructible<double**>, std::is_move_assignable<double**> >::value, void>::type std::swap<double**>(double**&, double**&) [34]
+                0.00    0.00      27/27          std::remove_reference<double**&>::type&& std::move<double**&>(double**&) [18]
+-----------------------------------------------
+                0.00    0.00       8/8           Height::operator+=(Height) [82]
+[35]     0.0    0.00    0.00       8         Height::getDvect() [35]
+                0.00    0.00       8/19          Dvector::Dvector(Dvector const&) [19]
+-----------------------------------------------
+                0.00    0.00       4/8           std::allocator_traits<std::allocator<PhilipsWave> >::max_size(std::allocator<PhilipsWave> const&) [66]
+                0.00    0.00       4/8           __gnu_cxx::new_allocator<PhilipsWave>::allocate(unsigned long, void const*) [56]
+[36]     0.0    0.00    0.00       8         __gnu_cxx::new_allocator<PhilipsWave>::max_size() const [36]
+-----------------------------------------------
+                0.00    0.00       8/8           PhilipsWave* std::__uninitialized_move_if_noexcept_a<PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave> >(PhilipsWave*, PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&) [70]
+[37]     0.0    0.00    0.00       8         PhilipsWave const* std::__make_move_if_noexcept_iterator<PhilipsWave, PhilipsWave const*>(PhilipsWave*) [37]
+-----------------------------------------------
+                0.00    0.00       2/7           void __gnu_cxx::new_allocator<PhilipsWave>::construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [83]
+                0.00    0.00       5/7           void std::_Construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [51]
+[38]     0.0    0.00    0.00       7         PhilipsWave::PhilipsWave(PhilipsWave const&) [38]
+                0.00    0.00       7/17          Dvector::Dvector() [20]
+                0.00    0.00       7/11          Dvector::operator=(Dvector const&) [27]
+-----------------------------------------------
+                0.00    0.00       1/7           Ocean::Ocean(double, double, int, int, WaveModel&) [138]
+                0.00    0.00       1/7           Ocean::~Ocean() [139]
+                0.00    0.00       2/7           main [6]
+                0.00    0.00       3/7           PhilipsWaveModel::operator()(double) [134]
+[39]     0.0    0.00    0.00       7         Height::~Height() [39]
+                0.00    0.00       7/76          Dvector::~Dvector() [13]
+-----------------------------------------------
+                0.00    0.00       7/7           void std::_Destroy_aux<false>::__destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*) [49]
+[40]     0.0    0.00    0.00       7         void std::_Destroy<PhilipsWave>(PhilipsWave*) [40]
+                0.00    0.00       7/9           PhilipsWave::~PhilipsWave() [32]
+-----------------------------------------------
+                0.00    0.00       2/7           void __gnu_cxx::new_allocator<PhilipsWave>::construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [83]
+                0.00    0.00       5/7           void std::_Construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [51]
+[41]     0.0    0.00    0.00       7         operator new(unsigned long, void*) [41]
+-----------------------------------------------
+                0.00    0.00       3/6           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end() [76]
+                0.00    0.00       3/6           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin() [77]
+[42]     0.0    0.00    0.00       6         __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::__normal_iterator(PhilipsWave* const&) [42]
+-----------------------------------------------
+                0.00    0.00       6/6           PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*) [101]
+[43]     0.0    0.00    0.00       6         bool __gnu_cxx::operator!=<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [43]
+                0.00    0.00      12/12          __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::base() const [23]
+-----------------------------------------------
+                0.00    0.00       2/6           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+                0.00    0.00       4/6           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::max_size() const [61]
+[44]     0.0    0.00    0.00       6         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator() const [44]
+-----------------------------------------------
+                0.00    0.00       6/6           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Dvector> >, std::is_move_constructible<Dvector>, std::is_move_assignable<Dvector> >::value, void>::type std::swap<Dvector>(Dvector&, Dvector&) [110]
+[45]     0.0    0.00    0.00       6         std::remove_reference<Dvector&>::type&& std::move<Dvector&>(Dvector&) [45]
+-----------------------------------------------
+                0.00    0.00       1/5           main [6]
+                0.00    0.00       4/5           Dvector::ifft2d(int, int) [143]
+[46]     0.0    0.00    0.00       5         Dvector::ifft() [46]
+                0.00    0.00       5/10          Dvector::fft() [30]
+-----------------------------------------------
+                0.00    0.00       5/5           std::allocator<PhilipsWave>::~allocator() [48]
+[47]     0.0    0.00    0.00       5         __gnu_cxx::new_allocator<PhilipsWave>::~new_allocator() [47]
+-----------------------------------------------
+                0.00    0.00       2/5           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+                0.00    0.00       3/5           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::~_Vector_impl() [74]
+[48]     0.0    0.00    0.00       5         std::allocator<PhilipsWave>::~allocator() [48]
+                0.00    0.00       5/5           __gnu_cxx::new_allocator<PhilipsWave>::~new_allocator() [47]
+-----------------------------------------------
+                0.00    0.00       5/5           void std::_Destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*) [52]
+[49]     0.0    0.00    0.00       5         void std::_Destroy_aux<false>::__destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*) [49]
+                0.00    0.00       7/12          PhilipsWave* std::__addressof<PhilipsWave>(PhilipsWave&) [24]
+                0.00    0.00       7/7           void std::_Destroy<PhilipsWave>(PhilipsWave*) [40]
+-----------------------------------------------
+                0.00    0.00       2/5           void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+                0.00    0.00       3/5           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::~_Vector_base() [75]
+[50]     0.0    0.00    0.00       5         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_deallocate(PhilipsWave*, unsigned long) [50]
+                0.00    0.00       4/4           std::allocator_traits<std::allocator<PhilipsWave> >::deallocate(std::allocator<PhilipsWave>&, PhilipsWave*, unsigned long) [64]
+-----------------------------------------------
+                0.00    0.00       1/5           PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*) [67]
+                0.00    0.00       4/5           PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*) [101]
+[51]     0.0    0.00    0.00       5         void std::_Construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [51]
+                0.00    0.00       5/11          PhilipsWave const& std::forward<PhilipsWave const&>(std::remove_reference<PhilipsWave const&>::type&) [29]
+                0.00    0.00       5/7           operator new(unsigned long, void*) [41]
+                0.00    0.00       5/7           PhilipsWave::PhilipsWave(PhilipsWave const&) [38]
+-----------------------------------------------
+                0.00    0.00       5/5           void std::_Destroy<PhilipsWave*, PhilipsWave>(PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&) [53]
+[52]     0.0    0.00    0.00       5         void std::_Destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*) [52]
+                0.00    0.00       5/5           void std::_Destroy_aux<false>::__destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*) [49]
+-----------------------------------------------
+                0.00    0.00       2/5           void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+                0.00    0.00       3/5           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::~vector() [78]
+[53]     0.0    0.00    0.00       5         void std::_Destroy<PhilipsWave*, PhilipsWave>(PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&) [53]
+                0.00    0.00       5/5           void std::_Destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*) [52]
+-----------------------------------------------
+                0.00    0.00       1/4           main [6]
+                0.00    0.00       1/4           Ocean::Ocean(double, double, int, int, WaveModel&) [138]
+                0.00    0.00       2/4           PhilipsWaveModel::operator()(double) [134]
+[54]     0.0    0.00    0.00       4         Height::Height(double, double, int, int) [54]
+                0.00    0.00       4/17          Dvector::Dvector() [20]
+                0.00    0.00       4/40          Dvector::Dvector(int, double) [15]
+                0.00    0.00       4/76          Dvector::~Dvector() [13]
+                0.00    0.00       4/9           Dvector::operator=(Dvector&&) [33]
+-----------------------------------------------
+                0.00    0.00       4/4           std::allocator_traits<std::allocator<PhilipsWave> >::deallocate(std::allocator<PhilipsWave>&, PhilipsWave*, unsigned long) [64]
+[55]     0.0    0.00    0.00       4         __gnu_cxx::new_allocator<PhilipsWave>::deallocate(PhilipsWave*, unsigned long) [55]
+-----------------------------------------------
+                0.00    0.00       4/4           std::allocator_traits<std::allocator<PhilipsWave> >::allocate(std::allocator<PhilipsWave>&, unsigned long) [65]
+[56]     0.0    0.00    0.00       4         __gnu_cxx::new_allocator<PhilipsWave>::allocate(unsigned long, void const*) [56]
+                0.00    0.00       4/8           __gnu_cxx::new_allocator<PhilipsWave>::max_size() const [36]
+-----------------------------------------------
+                0.00    0.00       4/4           std::allocator<PhilipsWave>::allocator(std::allocator<PhilipsWave> const&) [62]
+[57]     0.0    0.00    0.00       4         __gnu_cxx::new_allocator<PhilipsWave>::new_allocator(__gnu_cxx::new_allocator<PhilipsWave> const&) [57]
+-----------------------------------------------
+                0.00    0.00       2/4           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin() const [92]
+                0.00    0.00       2/4           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end() const [91]
+[58]     0.0    0.00    0.00       4         __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::__normal_iterator(PhilipsWave const* const&) [58]
+-----------------------------------------------
+                0.00    0.00       4/4           PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*) [101]
+[59]     0.0    0.00    0.00       4         __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator++() [59]
+-----------------------------------------------
+                0.00    0.00       4/4           PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*) [101]
+[60]     0.0    0.00    0.00       4         __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator*() const [60]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_check_len(unsigned long, char const*) const [90]
+[61]     0.0    0.00    0.00       4         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::max_size() const [61]
+                0.00    0.00       4/6           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator() const [44]
+                0.00    0.00       4/4           std::allocator_traits<std::allocator<PhilipsWave> >::max_size(std::allocator<PhilipsWave> const&) [66]
+-----------------------------------------------
+                0.00    0.00       2/4           std::allocator_traits<std::allocator<PhilipsWave> >::select_on_container_copy_construction(std::allocator<PhilipsWave> const&) [99]
+                0.00    0.00       2/4           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::_Vector_impl(std::allocator<PhilipsWave> const&) [93]
+[62]     0.0    0.00    0.00       4         std::allocator<PhilipsWave>::allocator(std::allocator<PhilipsWave> const&) [62]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<PhilipsWave>::new_allocator(__gnu_cxx::new_allocator<PhilipsWave> const&) [57]
+-----------------------------------------------
+                0.00    0.00       2/4           void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+                0.00    0.00       2/4           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_create_storage(unsigned long) [94]
+[63]     0.0    0.00    0.00       4         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_allocate(unsigned long) [63]
+                0.00    0.00       4/4           std::allocator_traits<std::allocator<PhilipsWave> >::allocate(std::allocator<PhilipsWave>&, unsigned long) [65]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_deallocate(PhilipsWave*, unsigned long) [50]
+[64]     0.0    0.00    0.00       4         std::allocator_traits<std::allocator<PhilipsWave> >::deallocate(std::allocator<PhilipsWave>&, PhilipsWave*, unsigned long) [64]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<PhilipsWave>::deallocate(PhilipsWave*, unsigned long) [55]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_allocate(unsigned long) [63]
+[65]     0.0    0.00    0.00       4         std::allocator_traits<std::allocator<PhilipsWave> >::allocate(std::allocator<PhilipsWave>&, unsigned long) [65]
+                0.00    0.00       4/4           __gnu_cxx::new_allocator<PhilipsWave>::allocate(unsigned long, void const*) [56]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::max_size() const [61]
+[66]     0.0    0.00    0.00       4         std::allocator_traits<std::allocator<PhilipsWave> >::max_size(std::allocator<PhilipsWave> const&) [66]
+                0.00    0.00       4/8           __gnu_cxx::new_allocator<PhilipsWave>::max_size() const [36]
+-----------------------------------------------
+                0.00    0.00       4/4           PhilipsWave* std::uninitialized_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*) [68]
+[67]     0.0    0.00    0.00       4         PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*) [67]
+                0.00    0.00       1/12          PhilipsWave* std::__addressof<PhilipsWave>(PhilipsWave&) [24]
+                0.00    0.00       1/5           void std::_Construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [51]
+-----------------------------------------------
+                0.00    0.00       4/4           PhilipsWave* std::__uninitialized_copy_a<PhilipsWave const*, PhilipsWave*, PhilipsWave>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*, std::allocator<PhilipsWave>&) [69]
+[68]     0.0    0.00    0.00       4         PhilipsWave* std::uninitialized_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*) [68]
+                0.00    0.00       4/4           PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*) [67]
+-----------------------------------------------
+                0.00    0.00       4/4           PhilipsWave* std::__uninitialized_move_if_noexcept_a<PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave> >(PhilipsWave*, PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&) [70]
+[69]     0.0    0.00    0.00       4         PhilipsWave* std::__uninitialized_copy_a<PhilipsWave const*, PhilipsWave*, PhilipsWave>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*, std::allocator<PhilipsWave>&) [69]
+                0.00    0.00       4/4           PhilipsWave* std::uninitialized_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*) [68]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+[70]     0.0    0.00    0.00       4         PhilipsWave* std::__uninitialized_move_if_noexcept_a<PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave> >(PhilipsWave*, PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&) [70]
+                0.00    0.00       8/8           PhilipsWave const* std::__make_move_if_noexcept_iterator<PhilipsWave, PhilipsWave const*>(PhilipsWave*) [37]
+                0.00    0.00       4/4           PhilipsWave* std::__uninitialized_copy_a<PhilipsWave const*, PhilipsWave*, PhilipsWave>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*, std::allocator<PhilipsWave>&) [69]
+-----------------------------------------------
+                0.00    0.00       4/4           Height::operator=(Height&&) [81]
+[71]     0.0    0.00    0.00       4         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double> >, std::is_move_constructible<double>, std::is_move_assignable<double> >::value, void>::type std::swap<double>(double&, double&) [71]
+                0.00    0.00      12/12          std::remove_reference<double&>::type&& std::move<double&>(double&) [25]
+-----------------------------------------------
+                0.00    0.00       3/3           main [6]
+[72]     0.0    0.00    0.00       3         Dvector::operator==(Dvector const&) [72]
+-----------------------------------------------
+                0.00    0.00       3/3           PhilipsWaveModel::operator()(double) [134]
+[73]     0.0    0.00    0.00       3         bool __gnu_cxx::operator!=<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [73]
+                0.00    0.00       6/14          __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::base() const [21]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::~_Vector_base() [75]
+[74]     0.0    0.00    0.00       3         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::~_Vector_impl() [74]
+                0.00    0.00       3/5           std::allocator<PhilipsWave>::~allocator() [48]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::~vector() [78]
+[75]     0.0    0.00    0.00       3         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::~_Vector_base() [75]
+                0.00    0.00       3/3           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::~_Vector_impl() [74]
+                0.00    0.00       3/5           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_deallocate(PhilipsWave*, unsigned long) [50]
+-----------------------------------------------
+                0.00    0.00       1/3           PhilipsWaveModel::operator()(double) [134]
+                0.00    0.00       2/3           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::push_back(PhilipsWave const&) [105]
+[76]     0.0    0.00    0.00       3         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end() [76]
+                0.00    0.00       3/6           __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::__normal_iterator(PhilipsWave* const&) [42]
+-----------------------------------------------
+                0.00    0.00       1/3           PhilipsWaveModel::operator()(double) [134]
+                0.00    0.00       2/3           void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+[77]     0.0    0.00    0.00       3         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin() [77]
+                0.00    0.00       3/6           __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::__normal_iterator(PhilipsWave* const&) [42]
+-----------------------------------------------
+                0.00    0.00       1/3           PhilipsWaveModel::~PhilipsWaveModel() [133]
+                0.00    0.00       2/3           main [6]
+[78]     0.0    0.00    0.00       3         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::~vector() [78]
+                0.00    0.00       3/11          std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator() [28]
+                0.00    0.00       3/5           void std::_Destroy<PhilipsWave*, PhilipsWave>(PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&) [53]
+                0.00    0.00       3/3           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::~_Vector_base() [75]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[79]     0.0    0.00    0.00       2         PhilipsWave::PhilipsWave(double, Dvector, double) [79]
+                0.00    0.00       2/17          Dvector::Dvector() [20]
+                0.00    0.00       2/11          Dvector::operator=(Dvector const&) [27]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWave::operator()(double, Height&, int, int, double, double) const [87]
+[80]     0.0    0.00    0.00       2         Height::Height(Height const&) [80]
+                0.00    0.00       2/17          Dvector::Dvector() [20]
+                0.00    0.00       2/11          Dvector::operator=(Dvector const&) [27]
+-----------------------------------------------
+                0.00    0.00       1/2           main [6]
+                0.00    0.00       1/2           Ocean::Ocean(double, double, int, int, WaveModel&) [138]
+[81]     0.0    0.00    0.00       2         Height::operator=(Height&&) [81]
+                0.00    0.00       4/4           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double> >, std::is_move_constructible<double>, std::is_move_assignable<double> >::value, void>::type std::swap<double>(double&, double&) [71]
+                0.00    0.00       4/13          std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) [22]
+                0.00    0.00       2/2           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Dvector> >, std::is_move_constructible<Dvector>, std::is_move_assignable<Dvector> >::value, void>::type std::swap<Dvector>(Dvector&, Dvector&) [110]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWaveModel::operator()(double) [134]
+[82]     0.0    0.00    0.00       2         Height::operator+=(Height) [82]
+                0.00    0.00      16/29          Dvector::operator()(int) [17]
+                0.00    0.00      10/11          Dvector::size() [26]
+                0.00    0.00       8/8           Height::getDvect() [35]
+                0.00    0.00       8/76          Dvector::~Dvector() [13]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::allocator_traits<std::allocator<PhilipsWave> >::construct<PhilipsWave, PhilipsWave const&>(std::allocator<PhilipsWave>&, PhilipsWave*, PhilipsWave const&) [100]
+[83]     0.0    0.00    0.00       2         void __gnu_cxx::new_allocator<PhilipsWave>::construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [83]
+                0.00    0.00       2/11          PhilipsWave const& std::forward<PhilipsWave const&>(std::remove_reference<PhilipsWave const&>::type&) [29]
+                0.00    0.00       2/7           operator new(unsigned long, void*) [41]
+                0.00    0.00       2/7           PhilipsWave::PhilipsWave(PhilipsWave const&) [38]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+[84]     0.0    0.00    0.00       2         __gnu_cxx::__alloc_traits<std::allocator<PhilipsWave> >::_S_select_on_copy(std::allocator<PhilipsWave> const&) [84]
+                0.00    0.00       2/2           std::allocator_traits<std::allocator<PhilipsWave> >::select_on_container_copy_construction(std::allocator<PhilipsWave> const&) [99]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWaveModel::operator()(double) [134]
+[85]     0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator++() [85]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+[86]     0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::difference_type __gnu_cxx::operator-<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [86]
+                0.00    0.00       4/14          __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::base() const [21]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWaveModel::operator()(double) [134]
+[87]     0.0    0.00    0.00       2         PhilipsWave::operator()(double, Height&, int, int, double, double) const [87]
+                0.00    0.00       2/2           std::random_device::random_device(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [96]
+                0.00    0.00       2/2           std::random_device::operator()() [98]
+                0.00    0.00       2/2           std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine(unsigned long) [103]
+                0.00    0.00       2/2           Height::Height(Height const&) [80]
+                0.00    0.00       2/2           std::random_device::~random_device() [97]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[88]     0.0    0.00    0.00       2         PhilipsWaveModel::getDir() const [88]
+                0.00    0.00       2/19          Dvector::Dvector(Dvector const&) [19]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWaveModel::operator()(double) [134]
+[89]     0.0    0.00    0.00       2         __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator*() const [89]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+[90]     0.0    0.00    0.00       2         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_check_len(unsigned long, char const*) const [90]
+                0.00    0.00       8/10          std::vector<PhilipsWave, std::allocator<PhilipsWave> >::size() const [31]
+                0.00    0.00       4/4           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::max_size() const [61]
+                0.00    0.00       2/2           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [109]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+[91]     0.0    0.00    0.00       2         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end() const [91]
+                0.00    0.00       2/4           __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::__normal_iterator(PhilipsWave const* const&) [58]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+[92]     0.0    0.00    0.00       2         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin() const [92]
+                0.00    0.00       2/4           __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::__normal_iterator(PhilipsWave const* const&) [58]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base(unsigned long, std::allocator<PhilipsWave> const&) [95]
+[93]     0.0    0.00    0.00       2         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::_Vector_impl(std::allocator<PhilipsWave> const&) [93]
+                0.00    0.00       2/4           std::allocator<PhilipsWave>::allocator(std::allocator<PhilipsWave> const&) [62]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base(unsigned long, std::allocator<PhilipsWave> const&) [95]
+[94]     0.0    0.00    0.00       2         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_create_storage(unsigned long) [94]
+                0.00    0.00       2/4           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_allocate(unsigned long) [63]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+[95]     0.0    0.00    0.00       2         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base(unsigned long, std::allocator<PhilipsWave> const&) [95]
+                0.00    0.00       2/2           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::_Vector_impl(std::allocator<PhilipsWave> const&) [93]
+                0.00    0.00       2/2           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_create_storage(unsigned long) [94]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWave::operator()(double, Height&, int, int, double, double) const [87]
+[96]     0.0    0.00    0.00       2         std::random_device::random_device(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [96]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWave::operator()(double, Height&, int, int, double, double) const [87]
+[97]     0.0    0.00    0.00       2         std::random_device::~random_device() [97]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWave::operator()(double, Height&, int, int, double, double) const [87]
+[98]     0.0    0.00    0.00       2         std::random_device::operator()() [98]
+-----------------------------------------------
+                0.00    0.00       2/2           __gnu_cxx::__alloc_traits<std::allocator<PhilipsWave> >::_S_select_on_copy(std::allocator<PhilipsWave> const&) [84]
+[99]     0.0    0.00    0.00       2         std::allocator_traits<std::allocator<PhilipsWave> >::select_on_container_copy_construction(std::allocator<PhilipsWave> const&) [99]
+                0.00    0.00       2/4           std::allocator<PhilipsWave>::allocator(std::allocator<PhilipsWave> const&) [62]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+[100]    0.0    0.00    0.00       2         void std::allocator_traits<std::allocator<PhilipsWave> >::construct<PhilipsWave, PhilipsWave const&>(std::allocator<PhilipsWave>&, PhilipsWave*, PhilipsWave const&) [100]
+                0.00    0.00       2/11          PhilipsWave const& std::forward<PhilipsWave const&>(std::remove_reference<PhilipsWave const&>::type&) [29]
+                0.00    0.00       2/2           void __gnu_cxx::new_allocator<PhilipsWave>::construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [83]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWave* std::uninitialized_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*) [107]
+[101]    0.0    0.00    0.00       2         PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*) [101]
+                0.00    0.00       6/6           bool __gnu_cxx::operator!=<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [43]
+                0.00    0.00       4/4           __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator*() const [60]
+                0.00    0.00       4/12          PhilipsWave* std::__addressof<PhilipsWave>(PhilipsWave&) [24]
+                0.00    0.00       4/5           void std::_Construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [51]
+                0.00    0.00       4/4           __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator++() [59]
+-----------------------------------------------
+                0.00    0.00       2/2           std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine(unsigned long) [103]
+[102]    0.0    0.00    0.00       2         std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long) [102]
+                0.00    0.00    1248/1248        unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long) [9]
+                0.00    0.00    1246/1246        unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long) [11]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWave::operator()(double, Height&, int, int, double, double) const [87]
+[103]    0.0    0.00    0.00       2         std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine(unsigned long) [103]
+                0.00    0.00       2/2           std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long) [102]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::push_back(PhilipsWave const&) [105]
+[104]    0.0    0.00    0.00       2         void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+                0.00    0.00       6/11          std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator() [28]
+                0.00    0.00       4/14          __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::base() const [21]
+                0.00    0.00       4/4           PhilipsWave* std::__uninitialized_move_if_noexcept_a<PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave> >(PhilipsWave*, PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&) [70]
+                0.00    0.00       2/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_check_len(unsigned long, char const*) const [90]
+                0.00    0.00       2/3           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin() [77]
+                0.00    0.00       2/2           __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::difference_type __gnu_cxx::operator-<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [86]
+                0.00    0.00       2/4           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_allocate(unsigned long) [63]
+                0.00    0.00       2/11          PhilipsWave const& std::forward<PhilipsWave const&>(std::remove_reference<PhilipsWave const&>::type&) [29]
+                0.00    0.00       2/2           void std::allocator_traits<std::allocator<PhilipsWave> >::construct<PhilipsWave, PhilipsWave const&>(std::allocator<PhilipsWave>&, PhilipsWave*, PhilipsWave const&) [100]
+                0.00    0.00       2/5           void std::_Destroy<PhilipsWave*, PhilipsWave>(PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&) [53]
+                0.00    0.00       2/5           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_deallocate(PhilipsWave*, unsigned long) [50]
+-----------------------------------------------
+                0.00    0.00       2/2           main [6]
+[105]    0.0    0.00    0.00       2         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::push_back(PhilipsWave const&) [105]
+                0.00    0.00       2/3           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end() [76]
+                0.00    0.00       2/2           void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&) [104]
+-----------------------------------------------
+                0.00    0.00       1/2           main [6]
+                0.00    0.00       1/2           PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double, double, double, double, double, int, int, std::vector<PhilipsWave, std::allocator<PhilipsWave> >) [132]
+[106]    0.0    0.00    0.00       2         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+                0.00    0.00       2/6           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator() const [44]
+                0.00    0.00       2/2           __gnu_cxx::__alloc_traits<std::allocator<PhilipsWave> >::_S_select_on_copy(std::allocator<PhilipsWave> const&) [84]
+                0.00    0.00       2/10          std::vector<PhilipsWave, std::allocator<PhilipsWave> >::size() const [31]
+                0.00    0.00       2/2           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base(unsigned long, std::allocator<PhilipsWave> const&) [95]
+                0.00    0.00       2/5           std::allocator<PhilipsWave>::~allocator() [48]
+                0.00    0.00       2/11          std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator() [28]
+                0.00    0.00       2/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end() const [91]
+                0.00    0.00       2/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin() const [92]
+                0.00    0.00       2/2           PhilipsWave* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*, PhilipsWave>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*, std::allocator<PhilipsWave>&) [108]
+-----------------------------------------------
+                0.00    0.00       2/2           PhilipsWave* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*, PhilipsWave>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*, std::allocator<PhilipsWave>&) [108]
+[107]    0.0    0.00    0.00       2         PhilipsWave* std::uninitialized_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*) [107]
+                0.00    0.00       2/2           PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*) [101]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+[108]    0.0    0.00    0.00       2         PhilipsWave* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*, PhilipsWave>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*, std::allocator<PhilipsWave>&) [108]
+                0.00    0.00       2/2           PhilipsWave* std::uninitialized_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*) [107]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_check_len(unsigned long, char const*) const [90]
+[109]    0.0    0.00    0.00       2         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [109]
+-----------------------------------------------
+                0.00    0.00       2/2           Height::operator=(Height&&) [81]
+[110]    0.0    0.00    0.00       2         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Dvector> >, std::is_move_constructible<Dvector>, std::is_move_assignable<Dvector> >::value, void>::type std::swap<Dvector>(Dvector&, Dvector&) [110]
+                0.00    0.00       6/6           std::remove_reference<Dvector&>::type&& std::move<Dvector&>(Dvector&) [45]
+                0.00    0.00       4/9           Dvector::operator=(Dvector&&) [33]
+                0.00    0.00       2/19          Dvector::Dvector(Dvector const&) [19]
+                0.00    0.00       2/76          Dvector::~Dvector() [13]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [359]
+[111]    0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN11PhilipsWaveC2Ed7Dvectord [111]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [125]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [359]
+[112]    0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN12GerstnerWaveC2Edd7Dvectord [112]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [121]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [359]
+[113]    0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN16PhilipsWaveModelC2E7DvectorddddddiiSt6vectorI11PhilipsWaveSaIS2_EE [113]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [126]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [359]
+[114]    0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN17GerstnerWaveModelC2E7DvectorddddddiiSt6vectorI12GerstnerWaveSaIS2_EE [114]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [122]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [359]
+[115]    0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN5OceanC2EddiiR9WaveModel [115]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [123]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [359]
+[116]    0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN6HeightC2Ev [116]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [127]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [359]
+[117]    0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN7DvectorC2Ev [117]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [128]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [359]
+[118]    0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN9WaveModelC2Ev [118]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [124]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [359]
+[119]    0.0    0.00    0.00       1         _GLOBAL__sub_I_main [119]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [120]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [119]
+[120]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [120]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN12GerstnerWaveC2Edd7Dvectord [112]
+[121]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [121]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN17GerstnerWaveModelC2E7DvectorddddddiiSt6vectorI12GerstnerWaveSaIS2_EE [114]
+[122]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [122]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN5OceanC2EddiiR9WaveModel [115]
+[123]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [123]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN9WaveModelC2Ev [118]
+[124]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [124]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN11PhilipsWaveC2Ed7Dvectord [111]
+[125]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [125]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN16PhilipsWaveModelC2E7DvectorddddddiiSt6vectorI11PhilipsWaveSaIS2_EE [113]
+[126]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [126]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN6HeightC2Ev [116]
+[127]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [127]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN7DvectorC2Ev [117]
+[128]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [128]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[129]    0.0    0.00    0.00       1         PhilipsWave::getWindDir() [129]
+                0.00    0.00       1/19          Dvector::Dvector(Dvector const&) [19]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[130]    0.0    0.00    0.00       1         PhilipsWave::getWindSpeed() [130]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[131]    0.0    0.00    0.00       1         PhilipsWave::getAmpl() [131]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[132]    0.0    0.00    0.00       1         PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double, double, double, double, double, int, int, std::vector<PhilipsWave, std::allocator<PhilipsWave> >) [132]
+                0.00    0.00       1/19          Dvector::Dvector(Dvector const&) [19]
+                0.00    0.00       1/1           WaveModel::WaveModel(Dvector, double, double, double, double) [144]
+                0.00    0.00       1/76          Dvector::~Dvector() [13]
+                0.00    0.00       1/2           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&) [106]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[133]    0.0    0.00    0.00       1         PhilipsWaveModel::~PhilipsWaveModel() [133]
+                0.00    0.00       1/3           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::~vector() [78]
+                0.00    0.00       1/1           WaveModel::~WaveModel() [145]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[134]    0.0    0.00    0.00       1         PhilipsWaveModel::operator()(double) [134]
+                0.00    0.00       3/3           bool __gnu_cxx::operator!=<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [73]
+                0.00    0.00       3/7           Height::~Height() [39]
+                0.00    0.00       2/4           Height::Height(double, double, int, int) [54]
+                0.00    0.00       2/2           __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator*() const [89]
+                0.00    0.00       2/2           PhilipsWave::operator()(double, Height&, int, int, double, double) const [87]
+                0.00    0.00       2/2           Height::operator+=(Height) [82]
+                0.00    0.00       2/2           __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator++() [85]
+                0.00    0.00       1/1           Height::fill(double) [140]
+                0.00    0.00       1/3           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin() [77]
+                0.00    0.00       1/3           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end() [76]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[135]    0.0    0.00    0.00       1         Ocean::getT() [135]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[136]    0.0    0.00    0.00       1         Ocean::getLx() [136]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[137]    0.0    0.00    0.00       1         Ocean::getLy() [137]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[138]    0.0    0.00    0.00       1         Ocean::Ocean(double, double, int, int, WaveModel&) [138]
+                0.00    0.00       1/1           Height::Height() [141]
+                0.00    0.00       1/4           Height::Height(double, double, int, int) [54]
+                0.00    0.00       1/2           Height::operator=(Height&&) [81]
+                0.00    0.00       1/7           Height::~Height() [39]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[139]    0.0    0.00    0.00       1         Ocean::~Ocean() [139]
+                0.00    0.00       1/7           Height::~Height() [39]
+-----------------------------------------------
+                0.00    0.00       1/1           PhilipsWaveModel::operator()(double) [134]
+[140]    0.0    0.00    0.00       1         Height::fill(double) [140]
+                0.00    0.00       4/29          Dvector::operator()(int) [17]
+                0.00    0.00       1/11          Dvector::size() [26]
+-----------------------------------------------
+                0.00    0.00       1/1           Ocean::Ocean(double, double, int, int, WaveModel&) [138]
+[141]    0.0    0.00    0.00       1         Height::Height() [141]
+                0.00    0.00       2/17          Dvector::Dvector() [20]
+                0.00    0.00       1/9           Dvector::operator=(Dvector&&) [33]
+                0.00    0.00       1/76          Dvector::~Dvector() [13]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[142]    0.0    0.00    0.00       1         Dvector::fft2d(int, int) [142]
+                0.00    0.00      32/232         Dvector::getdata() [12]
+                0.00    0.00       4/10          Dvector::fft() [30]
+                0.00    0.00       2/40          Dvector::Dvector(int, double) [15]
+                0.00    0.00       2/76          Dvector::~Dvector() [13]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[143]    0.0    0.00    0.00       1         Dvector::ifft2d(int, int) [143]
+                0.00    0.00      32/232         Dvector::getdata() [12]
+                0.00    0.00       4/5           Dvector::ifft() [46]
+                0.00    0.00       2/40          Dvector::Dvector(int, double) [15]
+                0.00    0.00       2/76          Dvector::~Dvector() [13]
+-----------------------------------------------
+                0.00    0.00       1/1           PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double, double, double, double, double, int, int, std::vector<PhilipsWave, std::allocator<PhilipsWave> >) [132]
+[144]    0.0    0.00    0.00       1         WaveModel::WaveModel(Dvector, double, double, double, double) [144]
+                0.00    0.00       1/19          Dvector::Dvector(Dvector const&) [19]
+-----------------------------------------------
+                0.00    0.00       1/1           PhilipsWaveModel::~PhilipsWaveModel() [133]
+[145]    0.0    0.00    0.00       1         WaveModel::~WaveModel() [145]
+                0.00    0.00       1/76          Dvector::~Dvector() [13]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<PhilipsWave>::allocator() [151]
+[146]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<PhilipsWave>::new_allocator() [146]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[147]    0.0    0.00    0.00       1         PhilipsWaveModel::getLong() const [147]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[148]    0.0    0.00    0.00       1         PhilipsWaveModel::getAjust() const [148]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[149]    0.0    0.00    0.00       1         PhilipsWaveModel::getAlign() const [149]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[150]    0.0    0.00    0.00       1         PhilipsWaveModel::getIntens() const [150]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::_Vector_impl() [152]
+[151]    0.0    0.00    0.00       1         std::allocator<PhilipsWave>::allocator() [151]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<PhilipsWave>::new_allocator() [146]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base() [153]
+[152]    0.0    0.00    0.00       1         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::_Vector_impl() [152]
+                0.00    0.00       1/1           std::allocator<PhilipsWave>::allocator() [151]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector() [154]
+[153]    0.0    0.00    0.00       1         std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base() [153]
+                0.00    0.00       1/1           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::_Vector_impl() [152]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[154]    0.0    0.00    0.00       1         std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector() [154]
+                0.00    0.00       1/1           std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base() [153]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [111] _GLOBAL__sub_I__ZN11PhilipsWaveC2Ed7Dvectord [13] Dvector::~Dvector() [28] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator()
+ [112] _GLOBAL__sub_I__ZN12GerstnerWaveC2Edd7Dvectord [33] Dvector::operator=(Dvector&&) [153] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base()
+ [113] _GLOBAL__sub_I__ZN16PhilipsWaveModelC2E7DvectorddddddiiSt6vectorI11PhilipsWaveSaIS2_EE [27] Dvector::operator=(Dvector const&) [95] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_base(unsigned long, std::allocator<PhilipsWave> const&)
+ [114] _GLOBAL__sub_I__ZN17GerstnerWaveModelC2E7DvectorddddddiiSt6vectorI12GerstnerWaveSaIS2_EE [17] Dvector::operator()(int) [75] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::~_Vector_base()
+ [115] _GLOBAL__sub_I__ZN5OceanC2EddiiR9WaveModel [72] Dvector::operator==(Dvector const&) [96] std::random_device::random_device(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+ [116] _GLOBAL__sub_I__ZN6HeightC2Ev [144] WaveModel::WaveModel(Dvector, double, double, double, double) [97] std::random_device::~random_device()
+ [117] _GLOBAL__sub_I__ZN7DvectorC2Ev [145] WaveModel::~WaveModel() [98] std::random_device::operator()()
+ [118] _GLOBAL__sub_I__ZN9WaveModelC2Ev [55] __gnu_cxx::new_allocator<PhilipsWave>::deallocate(PhilipsWave*, unsigned long) [64] std::allocator_traits<std::allocator<PhilipsWave> >::deallocate(std::allocator<PhilipsWave>&, PhilipsWave*, unsigned long)
+ [119] _GLOBAL__sub_I_main    [56] __gnu_cxx::new_allocator<PhilipsWave>::allocate(unsigned long, void const*) [99] std::allocator_traits<std::allocator<PhilipsWave> >::select_on_container_copy_construction(std::allocator<PhilipsWave> const&)
+ [120] __static_initialization_and_destruction_0(int, int) [83] void __gnu_cxx::new_allocator<PhilipsWave>::construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&) [65] std::allocator_traits<std::allocator<PhilipsWave> >::allocate(std::allocator<PhilipsWave>&, unsigned long)
+ [121] __static_initialization_and_destruction_0(int, int) [146] __gnu_cxx::new_allocator<PhilipsWave>::new_allocator() [66] std::allocator_traits<std::allocator<PhilipsWave> >::max_size(std::allocator<PhilipsWave> const&)
+ [122] __static_initialization_and_destruction_0(int, int) [57] __gnu_cxx::new_allocator<PhilipsWave>::new_allocator(__gnu_cxx::new_allocator<PhilipsWave> const&) [100] void std::allocator_traits<std::allocator<PhilipsWave> >::construct<PhilipsWave, PhilipsWave const&>(std::allocator<PhilipsWave>&, PhilipsWave*, PhilipsWave const&)
+ [123] __static_initialization_and_destruction_0(int, int) [47] __gnu_cxx::new_allocator<PhilipsWave>::~new_allocator() [101] PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*)
+ [124] __static_initialization_and_destruction_0(int, int) [84] __gnu_cxx::__alloc_traits<std::allocator<PhilipsWave> >::_S_select_on_copy(std::allocator<PhilipsWave> const&) [67] PhilipsWave* std::__uninitialized_copy<false>::__uninit_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*)
+ [125] __static_initialization_and_destruction_0(int, int) [42] __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::__normal_iterator(PhilipsWave* const&) [102] std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed(unsigned long)
+ [126] __static_initialization_and_destruction_0(int, int) [85] __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator++() [103] std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine(unsigned long)
+ [127] __static_initialization_and_destruction_0(int, int) [58] __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::__normal_iterator(PhilipsWave const* const&) [104] void std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_realloc_insert<PhilipsWave const&>(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave const&)
+ [128] __static_initialization_and_destruction_0(int, int) [59] __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator++() [76] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end()
+ [129] PhilipsWave::getWindDir() [86] __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::difference_type __gnu_cxx::operator-<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [77] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin()
+ [130] PhilipsWave::getWindSpeed() [73] bool __gnu_cxx::operator!=<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [105] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::push_back(PhilipsWave const&)
+ [131] PhilipsWave::getAmpl() [43] bool __gnu_cxx::operator!=<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > > const&) [106] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector(std::vector<PhilipsWave, std::allocator<PhilipsWave> > const&)
+  [38] PhilipsWave::PhilipsWave(PhilipsWave const&) [87] PhilipsWave::operator()(double, Height&, int, int, double, double) const [154] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::vector()
+  [79] PhilipsWave::PhilipsWave(double, Dvector, double) [88] PhilipsWaveModel::getDir() const [78] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::~vector()
+  [32] PhilipsWave::~PhilipsWave() [147] PhilipsWaveModel::getLong() const [8] std::__detail::_Mod<unsigned long, 4294967296ul, 1ul, 0ul, true, true>::__calc(unsigned long)
+ [132] PhilipsWaveModel::PhilipsWaveModel(Dvector, double, double, double, double, double, double, int, int, std::vector<PhilipsWave, std::allocator<PhilipsWave> >) [148] PhilipsWaveModel::getAjust() const [10] std::__detail::_Mod<unsigned long, 624ul, 1ul, 0ul, true, true>::__calc(unsigned long)
+ [133] PhilipsWaveModel::~PhilipsWaveModel() [149] PhilipsWaveModel::getAlign() const [9] unsigned long std::__detail::__mod<unsigned long, 4294967296ul, 1ul, 0ul>(unsigned long)
+ [134] PhilipsWaveModel::operator()(double) [150] PhilipsWaveModel::getIntens() const [11] unsigned long std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>(unsigned long)
+ [135] Ocean::getT()          [14] Dvector::getdata() const [51] void std::_Construct<PhilipsWave, PhilipsWave const&>(PhilipsWave*, PhilipsWave const&)
+ [136] Ocean::getLx()         [36] __gnu_cxx::new_allocator<PhilipsWave>::max_size() const [24] PhilipsWave* std::__addressof<PhilipsWave>(PhilipsWave&)
+ [137] Ocean::getLy()         [21] __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::base() const [107] PhilipsWave* std::uninitialized_copy<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*)
+ [138] Ocean::Ocean(double, double, int, int, WaveModel&) [89] __gnu_cxx::__normal_iterator<PhilipsWave*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator*() const [68] PhilipsWave* std::uninitialized_copy<PhilipsWave const*, PhilipsWave*>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*)
+ [139] Ocean::~Ocean()        [23] __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::base() const [108] PhilipsWave* std::__uninitialized_copy_a<__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*, PhilipsWave>(__gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >, PhilipsWave*, std::allocator<PhilipsWave>&)
+ [140] Height::fill(double)   [60] __gnu_cxx::__normal_iterator<PhilipsWave const*, std::vector<PhilipsWave, std::allocator<PhilipsWave> > >::operator*() const [69] PhilipsWave* std::__uninitialized_copy_a<PhilipsWave const*, PhilipsWave*, PhilipsWave>(PhilipsWave const*, PhilipsWave const*, PhilipsWave*, std::allocator<PhilipsWave>&)
+  [35] Height::getDvect()     [44] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_get_Tp_allocator() const [37] PhilipsWave const* std::__make_move_if_noexcept_iterator<PhilipsWave, PhilipsWave const*>(PhilipsWave*)
+  [54] Height::Height(double, double, int, int) [90] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::_M_check_len(unsigned long, char const*) const [70] PhilipsWave* std::__uninitialized_move_if_noexcept_a<PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave> >(PhilipsWave*, PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&)
+  [80] Height::Height(Height const&) [91] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::end() const [109] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+ [141] Height::Height()       [31] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::size() const [45] std::remove_reference<Dvector&>::type&& std::move<Dvector&>(Dvector&)
+  [39] Height::~Height()      [92] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::begin() const [18] std::remove_reference<double**&>::type&& std::move<double**&>(double**&)
+  [81] Height::operator=(Height&&) [61] std::vector<PhilipsWave, std::allocator<PhilipsWave> >::max_size() const [25] std::remove_reference<double&>::type&& std::move<double&>(double&)
+  [82] Height::operator+=(Height) [62] std::allocator<PhilipsWave>::allocator(std::allocator<PhilipsWave> const&) [16] std::remove_reference<int&>::type&& std::move<int&>(int&)
+  [30] Dvector::fft()        [151] std::allocator<PhilipsWave>::allocator() [110] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<Dvector> >, std::is_move_constructible<Dvector>, std::is_move_assignable<Dvector> >::value, void>::type std::swap<Dvector>(Dvector&, Dvector&)
+  [46] Dvector::ifft()        [48] std::allocator<PhilipsWave>::~allocator() [34] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double**> >, std::is_move_constructible<double**>, std::is_move_assignable<double**> >::value, void>::type std::swap<double**>(double**&, double**&)
+  [26] Dvector::size()        [49] void std::_Destroy_aux<false>::__destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*) [71] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double> >, std::is_move_constructible<double>, std::is_move_assignable<double> >::value, void>::type std::swap<double>(double&, double&)
+ [142] Dvector::fft2d(int, int) [63] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_allocate(unsigned long) [22] std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&)
+ [143] Dvector::ifft2d(int, int) [93] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::_Vector_impl(std::allocator<PhilipsWave> const&) [29] PhilipsWave const& std::forward<PhilipsWave const&>(std::remove_reference<PhilipsWave const&>::type&)
+  [12] Dvector::getdata()    [152] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::_Vector_impl() [40] void std::_Destroy<PhilipsWave>(PhilipsWave*)
+  [19] Dvector::Dvector(Dvector const&) [74] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_Vector_impl::~_Vector_impl() [52] void std::_Destroy<PhilipsWave*>(PhilipsWave*, PhilipsWave*)
+  [15] Dvector::Dvector(int, double) [50] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_deallocate(PhilipsWave*, unsigned long) [53] void std::_Destroy<PhilipsWave*, PhilipsWave>(PhilipsWave*, PhilipsWave*, std::allocator<PhilipsWave>&)
+  [20] Dvector::Dvector()     [94] std::_Vector_base<PhilipsWave, std::allocator<PhilipsWave> >::_M_create_storage(unsigned long) [41] operator new(unsigned long, void*)

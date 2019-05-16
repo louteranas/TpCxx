@@ -5,7 +5,7 @@ OBJS=$(patsubst src/%.cpp, build/%.o,${SRCS})
 BINARIES=$(patsubst test/%.cpp, build/%, ${TESTS})
 
 CXX?=g++
-CXXFLAGS+=-std=c++11 -Wall -Wextra
+CXXFLAGS+=-std=c++11 -Wall -Wextra -pg
 
 all: ${BINARIES}
 

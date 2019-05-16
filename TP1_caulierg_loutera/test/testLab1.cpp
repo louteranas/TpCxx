@@ -17,12 +17,12 @@ int main (void)
 	Dvector v(3,2.5);
 	assert( v.size() == 3 );
 	assert( v(2) == 2.5 );
-	v.display(cout);
+	//v.display(cout);
 	Dvector vcopie(v);
 	assert( vcopie.size() == 3 );
 	assert( vcopie(2) == 2.5 );
 	Dvector vFile("dvectorInit.txt");
-	vFile.display(cout);
+	//vFile.display(cout);
 	assert( vFile.size() == 3 );
 	assert( vFile(0) == 5 and vFile(1) == 4 and vFile(2) == 12);
 	cout << "OK\n";

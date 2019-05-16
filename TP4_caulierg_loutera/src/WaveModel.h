@@ -16,7 +16,7 @@ using namespace std;
 
 class WaveModel{
 	public :
-			WaveModel();
+		WaveModel();
 	    WaveModel(Dvector dir, double align, double intensite, double longueurOnde, double ajust);
 	    virtual ~WaveModel();
 	    WaveModel(const WaveModel &wave);
@@ -30,8 +30,8 @@ class WaveModel{
 		virtual double getAjust() const =0;
 		virtual Height operator()(double t) = 0;
 	protected:
-	  Dvector dir;
-	  double align;
+	  	Dvector dir;
+	  	double align;
 		double intensite;
 		double longueurOnde;
 		double ajust;

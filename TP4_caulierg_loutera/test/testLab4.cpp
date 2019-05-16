@@ -54,11 +54,14 @@ int main (void)
 	assert((pwm.getDir()(0) == 1.1) && (pwm.getAlign() == 4) && (pwm.getIntens() == 2.5));
 	assert((pwm.getDir()(1) == 1.9) && (pwm.getLong() == 5) && (pwm.getAjust() == 6));
 	//Test opérateur() difficile à cause de la part de random
+	Height h_t0(20.0, 5.0, 4, 1);
+	h_t0 = pwm(5.0);
 	cout << "PhilipsWaveModel OK\n";
 	// -----------------  Test Ocean ---------------------
 	Ocean oc(20.0, 5.0, 4, 1, pwm);
 	//Test accesseurs
 	assert((oc.getT() == 0) && (oc.getLx() == 20.0) && (oc.getLy() == 5.0));
+
 	cout << "Ocean OK\n";
 	cout << "OK\n";
 }
